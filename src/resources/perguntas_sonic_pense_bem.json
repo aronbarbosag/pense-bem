@@ -1,0 +1,1679 @@
+[
+  {
+    "id": 1,
+    "pergunta": "A energia de Sonic vem dos:",
+    "opcoes": [
+      "tomada elétrica",
+      "alimentos",
+      "aparelho eletrônico",
+      "folha/planta"
+    ],
+    "resposta": "alimentos"
+  },
+  {
+    "id": 2,
+    "pergunta": "Como ele é um porco-espinho superveloz, Sonic adora ____ que quer dizer comida rápida!",
+    "opcoes": [
+      "fast food",
+      "arroz com feijão",
+      "verduras",
+      "frutas"
+    ],
+    "resposta": "fast food"
+  },
+  {
+    "id": 3,
+    "pergunta": "Outra paixão de Sonic são os doces, porque o açúcar dá muita ____.",
+    "opcoes": [
+      "energia",
+      "alegria",
+      "inteligência",
+      "dor de dente"
+    ],
+    "resposta": "energia"
+  },
+  {
+    "id": 4,
+    "pergunta": "Qual destes tem mais energia?",
+    "opcoes": [
+      "caixa",
+      "cadeira",
+      "xícara",
+      "sol"
+    ],
+    "resposta": "sol"
+  },
+  {
+    "id": 5,
+    "pergunta": "O que precisa de combustível para se movimentar?",
+    "opcoes": [
+      "fertilizante",
+      "televisão",
+      "carro",
+      "laranja"
+    ],
+    "resposta": "carro"
+  },
+  {
+    "id": 6,
+    "pergunta": "O que precisa de alimento para viver e crescer?",
+    "opcoes": [
+      "telefone",
+      "bebê",
+      "casa",
+      "vaso"
+    ],
+    "resposta": "bebê"
+  },
+  {
+    "id": 7,
+    "pergunta": "O coelho Johnny Lightfoot ensinou Sonic como ____ de qualquer perigo.",
+    "opcoes": [
+      "descansar",
+      "dormir",
+      "amassar",
+      "fugir"
+    ],
+    "resposta": "fugir"
+  },
+  {
+    "id": 8,
+    "pergunta": "Com a esquila Sally Acorn, Sonic aprendeu a ____ distâncias incríveis.",
+    "opcoes": [
+      "saltar",
+      "olhar",
+      "vestir",
+      "martelar"
+    ],
+    "resposta": "saltar"
+  },
+  {
+    "id": 9,
+    "pergunta": "Flicky the Bluebird ensinou Sonic a ser alegre, corajoso e ____ da natureza.",
+    "opcoes": [
+      "amigo",
+      "inimigo",
+      "destruidor",
+      "piloto"
+    ],
+    "resposta": "amigo"
+  },
+  {
+    "id": 10,
+    "pergunta": "O leão-marinho Joe Sushi ensinou Sonic a nadar e ____.",
+    "opcoes": [
+      "voar",
+      "subir",
+      "descer",
+      "mergulhar"
+    ],
+    "resposta": "mergulhar"
+  },
+  {
+    "id": 11,
+    "pergunta": "Com o pinguim Tux, Sonic aprendeu a respirar ____ da água.",
+    "opcoes": [
+      "atrás",
+      "em cima",
+      "embaixo",
+      "em volta"
+    ],
+    "resposta": "em cima"
+  },
+  {
+    "id": 12,
+    "pergunta": "Outro amigo de Sonic é Porker Lewis, um ____.",
+    "opcoes": [
+      "focinho",
+      "porquinho",
+      "rabinho",
+      "tatu"
+    ],
+    "resposta": "porquinho"
+  },
+  {
+    "id": 13,
+    "pergunta": "No Ataque Giratório Supersônico, o corpo de Sonic faz um movimento ____.",
+    "opcoes": [
+      "lateral",
+      "circular",
+      "quadrado",
+      "triangular"
+    ],
+    "resposta": "circular"
+  },
+  {
+    "id": 14,
+    "pergunta": "Movimento circular lembra ____.",
+    "opcoes": [
+      "quadrado",
+      "triângulo",
+      "círculo",
+      "estrela"
+    ],
+    "resposta": "círculo"
+  },
+  {
+    "id": 15,
+    "pergunta": "Quando Sonic acelera, ele aumenta sua ____.",
+    "opcoes": [
+      "raiva",
+      "fome",
+      "altura",
+      "velocidade"
+    ],
+    "resposta": "velocidade"
+  },
+  {
+    "id": 16,
+    "pergunta": "Para ir mais depressa, o motorista coloca seu pé no ____.",
+    "opcoes": [
+      "sapato",
+      "copo",
+      "tênis",
+      "pedal"
+    ],
+    "resposta": "pedal"
+  },
+  {
+    "id": 17,
+    "pergunta": "Quando Sonic corre, seu corpo muda de ____.",
+    "opcoes": [
+      "peso",
+      "forma",
+      "tamanho",
+      "posição"
+    ],
+    "resposta": "posição"
+  },
+  {
+    "id": 18,
+    "pergunta": "Qual destes animais se movimenta mais rápido?",
+    "opcoes": [
+      "tartaruga",
+      "minhoca",
+      "caranguejo",
+      "coelho"
+    ],
+    "resposta": "coelho"
+  },
+  {
+    "id": 19,
+    "pergunta": "Existem vários tipos de movimento. Qual destes lembra o Ataque Giratório Supersônico?",
+    "opcoes": [
+      "balão",
+      "objeto giratório/ventilador",
+      "panela",
+      "menino correndo"
+    ],
+    "resposta": "objeto giratório/ventilador"
+  },
+  {
+    "id": 20,
+    "pergunta": "Dentro do túnel estava escuro porque lá não havia ____.",
+    "opcoes": [
+      "ar",
+      "água",
+      "terra",
+      "luz"
+    ],
+    "resposta": "luz"
+  },
+  {
+    "id": 21,
+    "pergunta": "Um lugar que recebe luz está ____.",
+    "opcoes": [
+      "iluminado",
+      "vazio",
+      "frio",
+      "escuro"
+    ],
+    "resposta": "iluminado"
+  },
+  {
+    "id": 22,
+    "pergunta": "Quando Sonic estava no túnel ele não conseguiu ver sua ____.",
+    "opcoes": [
+      "árvore",
+      "sombra",
+      "fotografia",
+      "vida"
+    ],
+    "resposta": "sombra"
+  },
+  {
+    "id": 23,
+    "pergunta": "Não existem sombras no ____.",
+    "opcoes": [
+      "escuro",
+      "dia",
+      "planeta",
+      "relógio"
+    ],
+    "resposta": "escuro"
+  },
+  {
+    "id": 24,
+    "pergunta": "As sombras sempre aparecem do lado ____ ao da luz.",
+    "opcoes": [
+      "de baixo",
+      "contrário",
+      "de cima",
+      "certo"
+    ],
+    "resposta": "contrário"
+  },
+  {
+    "id": 25,
+    "pergunta": "Qual dessas é a sombra do Sonic?",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "resposta": "D"
+  },
+  {
+    "id": 26,
+    "pergunta": "Qual desses objetos é uma fonte de luz?",
+    "opcoes": [
+      "sol",
+      "árvore",
+      "cabide",
+      "caderno"
+    ],
+    "resposta": "sol"
+  },
+  {
+    "id": 27,
+    "pergunta": "Complete o quebra-cabeça com a peça correspondente ao lugar 27.",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "resposta": "C"
+  },
+  {
+    "id": 28,
+    "pergunta": "Complete o quebra-cabeça com a peça correspondente ao lugar 28.",
+    "opcoes": [
+      "B",
+      "D",
+      "C",
+      "A"
+    ],
+    "resposta": "B"
+  },
+  {
+    "id": 29,
+    "pergunta": "Complete o quebra-cabeça com a peça correspondente ao lugar 29.",
+    "opcoes": [
+      "D",
+      "C",
+      "A",
+      "B"
+    ],
+    "resposta": "A"
+  },
+  {
+    "id": 30,
+    "pergunta": "Complete o quebra-cabeça com a peça correspondente ao lugar 30.",
+    "opcoes": [
+      "C",
+      "B",
+      "D",
+      "A"
+    ],
+    "resposta": "D"
+  },
+  {
+    "id": 31,
+    "pergunta": "Qual é o nome da figura numerada 31?",
+    "opcoes": [
+      "televisão",
+      "computador",
+      "microondas",
+      "torradeira"
+    ],
+    "resposta": "computador"
+  },
+  {
+    "id": 32,
+    "pergunta": "Qual é o nome da figura numerada 32?",
+    "opcoes": [
+      "eletricista",
+      "bombeiro",
+      "médico",
+      "Sonic"
+    ],
+    "resposta": "Sonic"
+  },
+  {
+    "id": 33,
+    "pergunta": "Qual é o nome da figura numerada 33?",
+    "opcoes": [
+      "funil",
+      "balde",
+      "vaso",
+      "escorredor"
+    ],
+    "resposta": "funil"
+  },
+  {
+    "id": 34,
+    "pergunta": "Qual é o nome da figura numerada 34?",
+    "opcoes": [
+      "ferradura",
+      "ímã",
+      "serrote",
+      "martelo"
+    ],
+    "resposta": "ímã"
+  },
+  {
+    "id": 35,
+    "pergunta": "Qual é o nome da figura numerada 35?",
+    "opcoes": [
+      "tomada",
+      "painel",
+      "cenoura",
+      "vassoura"
+    ],
+    "resposta": "tomada"
+  },
+  {
+    "id": 36,
+    "pergunta": "Qual é o nome da figura numerada 36?",
+    "opcoes": [
+      "lanterna",
+      "chama",
+      "lâmpada",
+      "botijão"
+    ],
+    "resposta": "chama"
+  },
+  {
+    "id": 37,
+    "pergunta": "Qual é o nome da figura numerada 37?",
+    "opcoes": [
+      "bastão",
+      "lápis",
+      "careta",
+      "giz"
+    ],
+    "resposta": "giz"
+  },
+  {
+    "id": 38,
+    "pergunta": "Qual é o nome da figura numerada 38?",
+    "opcoes": [
+      "tubo de ensaio",
+      "copo de água",
+      "regador",
+      "peneira"
+    ],
+    "resposta": "tubo de ensaio"
+  },
+  {
+    "id": 39,
+    "pergunta": "O CROC funciona como um grande ____.",
+    "opcoes": [
+      "relógio",
+      "nariz",
+      "ímã",
+      "ventilador"
+    ],
+    "resposta": "ímã"
+  },
+  {
+    "id": 40,
+    "pergunta": "Com um ímã você pode atrair ____.",
+    "opcoes": [
+      "pregos",
+      "inseto",
+      "doce",
+      "pena"
+    ],
+    "resposta": "pregos"
+  },
+  {
+    "id": 41,
+    "pergunta": "O ímã atrai os objetos feitos de ____.",
+    "opcoes": [
+      "vidro",
+      "madeira",
+      "metal",
+      "plástico"
+    ],
+    "resposta": "metal"
+  },
+  {
+    "id": 42,
+    "pergunta": "Como o planeta Terra, os ímãs têm dois ____.",
+    "opcoes": [
+      "mares",
+      "lados",
+      "pólos",
+      "satélites"
+    ],
+    "resposta": "pólos"
+  },
+  {
+    "id": 43,
+    "pergunta": "A Terra também funciona como um enorme ímã. Por isso, seus pólos atraem a agulha da ____.",
+    "opcoes": [
+      "garrafa",
+      "bússola",
+      "cabide",
+      "inseto"
+    ],
+    "resposta": "bússola"
+  },
+  {
+    "id": 44,
+    "pergunta": "A bússola serve para nos ____.",
+    "opcoes": [
+      "esfriar",
+      "espetar",
+      "aquecer",
+      "orientar"
+    ],
+    "resposta": "orientar"
+  },
+  {
+    "id": 45,
+    "pergunta": "Ótica:",
+    "opcoes": [
+      "Estuda o som",
+      "Estuda o movimento",
+      "Estuda a energia se transformando",
+      "Estuda a luz"
+    ],
+    "resposta": "Estuda a luz"
+  },
+  {
+    "id": 46,
+    "pergunta": "Magnetismo:",
+    "opcoes": [
+      "Estuda o som",
+      "Estuda o movimento",
+      "Estuda a luz",
+      "Estuda as substâncias magnéticas"
+    ],
+    "resposta": "Estuda as substâncias magnéticas"
+  },
+  {
+    "id": 47,
+    "pergunta": "Eletricidade:",
+    "opcoes": [
+      "Estuda o som",
+      "Estuda os fenômenos elétricos",
+      "Estuda a luz",
+      "Estuda o movimento"
+    ],
+    "resposta": "Estuda os fenômenos elétricos"
+  },
+  {
+    "id": 48,
+    "pergunta": "Acústica:",
+    "opcoes": [
+      "Estuda a energia se transformando",
+      "Estuda o movimento",
+      "Estuda os fenômenos elétricos",
+      "Estuda o som"
+    ],
+    "resposta": "Estuda o som"
+  },
+  {
+    "id": 49,
+    "pergunta": "Mecânica:",
+    "opcoes": [
+      "Estuda a energia se transformando",
+      "Estuda o movimento",
+      "Estuda a luz",
+      "Estuda as substâncias magnéticas"
+    ],
+    "resposta": "Estuda o movimento"
+  },
+  {
+    "id": 50,
+    "pergunta": "Termodinâmica:",
+    "opcoes": [
+      "Estuda a energia se transformando",
+      "Estuda o movimento",
+      "Estuda a luz",
+      "Estuda o som"
+    ],
+    "resposta": "Estuda a energia se transformando"
+  },
+  {
+    "id": 51,
+    "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 51?",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "C"
+  },
+  {
+    "id": 52,
+    "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 52?",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "F"
+  },
+  {
+    "id": 53,
+    "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 53?",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "A"
+  },
+  {
+    "id": 54,
+    "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 54?",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "E"
+  },
+  {
+    "id": 55,
+    "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 55?",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "B"
+  },
+  {
+    "id": 56,
+    "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 56?",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "D"
+  },
+  {
+    "id": 57,
+    "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: TOPÁZIO.",
+    "opcoes": [
+      "vermelho",
+      "amarelo/laranja",
+      "azul",
+      "verde"
+    ],
+    "resposta": "amarelo/laranja"
+  },
+  {
+    "id": 58,
+    "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: ÁGUA-MARINHA.",
+    "opcoes": [
+      "vermelho",
+      "amarelo",
+      "azul-claro",
+      "verde"
+    ],
+    "resposta": "azul-claro"
+  },
+  {
+    "id": 59,
+    "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: RUBI.",
+    "opcoes": [
+      "vermelho",
+      "amarelo",
+      "azul",
+      "verde"
+    ],
+    "resposta": "vermelho"
+  },
+  {
+    "id": 60,
+    "pergunta": "A esmeralda de que o Dr. K. precisava tinha de ser da cor ____.",
+    "opcoes": [
+      "cinza",
+      "roxa",
+      "verde",
+      "vermelha"
+    ],
+    "resposta": "verde"
+  },
+  {
+    "id": 61,
+    "pergunta": "Na linha 61, assinale o desenho que lembra um som ou barulho.",
+    "opcoes": [
+      "meia",
+      "pássaro cantando",
+      "árvore",
+      "peixe"
+    ],
+    "resposta": "pássaro cantando"
+  },
+  {
+    "id": 62,
+    "pergunta": "Na linha 62, assinale o desenho que lembra um som ou barulho.",
+    "opcoes": [
+      "despertador",
+      "lápis",
+      "chaleira",
+      "livro"
+    ],
+    "resposta": "despertador"
+  },
+  {
+    "id": 63,
+    "pergunta": "Na linha 63, assinale o desenho que lembra um som ou barulho.",
+    "opcoes": [
+      "tênis",
+      "selo",
+      "mão",
+      "trompete"
+    ],
+    "resposta": "trompete"
+  },
+  {
+    "id": 64,
+    "pergunta": "Assinale qual destes produz o som mais forte.",
+    "opcoes": [
+      "vela",
+      "sino",
+      "galo",
+      "copo"
+    ],
+    "resposta": "sino"
+  },
+  {
+    "id": 65,
+    "pergunta": "Assinale qual destes produz o som mais forte.",
+    "opcoes": [
+      "pincel",
+      "rádio",
+      "abelha",
+      "flores"
+    ],
+    "resposta": "rádio"
+  },
+  {
+    "id": 66,
+    "pergunta": "Assinale qual destes produz o som mais forte.",
+    "opcoes": [
+      "carro",
+      "foguete",
+      "tambor",
+      "skate"
+    ],
+    "resposta": "foguete"
+  },
+  {
+    "id": 67,
+    "pergunta": "Esfregue com força uma mão contra a outra. O que aconteceu? Suas mãos ficaram ____.",
+    "opcoes": [
+      "moles",
+      "azuis",
+      "quentes",
+      "frias"
+    ],
+    "resposta": "quentes"
+  },
+  {
+    "id": 68,
+    "pergunta": "Agora você já sabe que a fricção ou atrito produz ____.",
+    "opcoes": [
+      "cansaço",
+      "frutos",
+      "gelo",
+      "calor"
+    ],
+    "resposta": "calor"
+  },
+  {
+    "id": 69,
+    "pergunta": "Se você colocar a colher de metal dentro da panela, ela vai ____.",
+    "opcoes": [
+      "boiar",
+      "esfriar",
+      "esquentar",
+      "derreter"
+    ],
+    "resposta": "esquentar"
+  },
+  {
+    "id": 70,
+    "pergunta": "O calor da água passa para a colher porque o metal é um ____ condutor de calor.",
+    "opcoes": [
+      "animal",
+      "mau",
+      "único",
+      "bom"
+    ],
+    "resposta": "bom"
+  },
+  {
+    "id": 71,
+    "pergunta": "Se você usar a colher de plástico, ela pode ____.",
+    "opcoes": [
+      "desbotar",
+      "esfriar",
+      "quebrar",
+      "derreter"
+    ],
+    "resposta": "derreter"
+  },
+  {
+    "id": 72,
+    "pergunta": "Para não queimar a mão, o certo é usar a colher de ____.",
+    "opcoes": [
+      "vidro",
+      "metal",
+      "plástico",
+      "madeira"
+    ],
+    "resposta": "madeira"
+  },
+  {
+    "id": 73,
+    "pergunta": "A colher de madeira não esquenta porque a madeira é um ____ condutor de calor.",
+    "opcoes": [
+      "mau",
+      "médio",
+      "bom",
+      "bonito"
+    ],
+    "resposta": "mau"
+  },
+  {
+    "id": 74,
+    "pergunta": "Qual é o mais veloz?",
+    "opcoes": [
+      "peixe",
+      "menino",
+      "Sonic",
+      "pato"
+    ],
+    "resposta": "Sonic"
+  },
+  {
+    "id": 75,
+    "pergunta": "Qual é o mais lento?",
+    "opcoes": [
+      "caracol",
+      "tartaruga",
+      "polvo",
+      "girafa"
+    ],
+    "resposta": "caracol"
+  },
+  {
+    "id": 76,
+    "pergunta": "Qual deles voa mais alto?",
+    "opcoes": [
+      "ave",
+      "balão",
+      "borboleta",
+      "avião"
+    ],
+    "resposta": "avião"
+  },
+  {
+    "id": 77,
+    "pergunta": "Qual é o mais leve?",
+    "opcoes": [
+      "avião",
+      "livro",
+      "chave",
+      "meia"
+    ],
+    "resposta": "meia"
+  },
+  {
+    "id": 78,
+    "pergunta": "Qual é o mais pesado?",
+    "opcoes": [
+      "onça",
+      "folha",
+      "cachorro",
+      "elefante"
+    ],
+    "resposta": "elefante"
+  },
+  {
+    "id": 79,
+    "pergunta": "Qual é o mais quente?",
+    "opcoes": [
+      "luvas",
+      "sol",
+      "picolé",
+      "mesa"
+    ],
+    "resposta": "sol"
+  },
+  {
+    "id": 80,
+    "pergunta": "Qual é o mais frio?",
+    "opcoes": [
+      "gelo",
+      "figo",
+      "ferro de passar",
+      "tapete"
+    ],
+    "resposta": "gelo"
+  },
+  {
+    "id": 81,
+    "pergunta": "Um alimento gostoso, feito de cacau.",
+    "opcoes": [
+      "hambúrguer",
+      "espinafre",
+      "macarrão",
+      "chocolate"
+    ],
+    "resposta": "chocolate"
+  },
+  {
+    "id": 82,
+    "pergunta": "Os alimentos ____ energia ao corpo.",
+    "opcoes": [
+      "fabricam",
+      "fornecem",
+      "aumentam",
+      "retiram"
+    ],
+    "resposta": "fornecem"
+  },
+  {
+    "id": 83,
+    "pergunta": "Nosso herói, o porco-espinho mais veloz do mundo.",
+    "opcoes": [
+      "Super",
+      "Sonic",
+      "Somar",
+      "Ovnik"
+    ],
+    "resposta": "Sonic"
+  },
+  {
+    "id": 84,
+    "pergunta": "O sanduíche preferido de Sonic.",
+    "opcoes": [
+      "bauru",
+      "x-salada",
+      "hambúrguer",
+      "hot dog"
+    ],
+    "resposta": "hot dog"
+  },
+  {
+    "id": 85,
+    "pergunta": "Ele também adora ____ que têm muitas calorias.",
+    "opcoes": [
+      "bifes",
+      "tomates",
+      "ovos",
+      "doces"
+    ],
+    "resposta": "doces"
+  },
+  {
+    "id": 86,
+    "pergunta": "Sonic devora montes de batatas ____.",
+    "opcoes": [
+      "chips",
+      "cozidas",
+      "fritas",
+      "cruas"
+    ],
+    "resposta": "fritas"
+  },
+  {
+    "id": 87,
+    "pergunta": "O 1º quadrinho é:",
+    "opcoes": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
+    "resposta": "B"
+  },
+  {
+    "id": 88,
+    "pergunta": "O 2º quadrinho é:",
+    "opcoes": [
+      "B",
+      "D",
+      "A",
+      "C"
+    ],
+    "resposta": "D"
+  },
+  {
+    "id": 89,
+    "pergunta": "O 3º quadrinho é:",
+    "opcoes": [
+      "C",
+      "A",
+      "D",
+      "B"
+    ],
+    "resposta": "A"
+  },
+  {
+    "id": 90,
+    "pergunta": "O 4º quadrinho é:",
+    "opcoes": [
+      "B",
+      "C",
+      "D",
+      "A"
+    ],
+    "resposta": "C"
+  },
+  {
+    "id": 91,
+    "pergunta": "Sonic usou seus ____ para encontrar o ovo na geladeira.",
+    "opcoes": [
+      "ouvidos",
+      "olhos",
+      "pés",
+      "espinhos"
+    ],
+    "resposta": "olhos"
+  },
+  {
+    "id": 92,
+    "pergunta": "Ele pegou o ovo com a ____.",
+    "opcoes": [
+      "mão",
+      "boca",
+      "colher",
+      "xícara"
+    ],
+    "resposta": "mão"
+  },
+  {
+    "id": 93,
+    "pergunta": "Sonic percebeu que o ovo estava estragado pelo ____.",
+    "opcoes": [
+      "formato",
+      "peso",
+      "calor",
+      "cheiro"
+    ],
+    "resposta": "cheiro"
+  },
+  {
+    "id": 94,
+    "pergunta": "Nosso herói sentiu o cheiro do ovo com seu ____.",
+    "opcoes": [
+      "olho",
+      "nariz",
+      "dedo",
+      "travesseiro"
+    ],
+    "resposta": "nariz"
+  },
+  {
+    "id": 95,
+    "pergunta": "Nós usamos a ____ para sentir o gosto dos alimentos.",
+    "opcoes": [
+      "cabeça",
+      "língua",
+      "mão",
+      "pé"
+    ],
+    "resposta": "língua"
+  },
+  {
+    "id": 96,
+    "pergunta": "Nossos ____ servem para escutar os sons.",
+    "opcoes": [
+      "cabelos",
+      "músculos",
+      "ossos",
+      "ouvidos"
+    ],
+    "resposta": "ouvidos"
+  },
+  {
+    "id": 97,
+    "pergunta": "Através da ____ sentimos calor ou frio.",
+    "opcoes": [
+      "boca",
+      "língua",
+      "pele",
+      "testa"
+    ],
+    "resposta": "pele"
+  },
+  {
+    "id": 98,
+    "pergunta": "Na história da explosão, o primeiro quadrinho é:",
+    "opcoes": [
+      "E",
+      "C",
+      "B",
+      "A"
+    ],
+    "resposta": "A"
+  },
+  {
+    "id": 99,
+    "pergunta": "Na história da explosão, o segundo quadrinho é:",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "resposta": "C"
+  },
+  {
+    "id": 100,
+    "pergunta": "Na história da explosão, o terceiro quadrinho é:",
+    "opcoes": [
+      "B",
+      "A",
+      "C",
+      "F"
+    ],
+    "resposta": "B"
+  },
+  {
+    "id": 101,
+    "pergunta": "Na história da explosão, o quarto quadrinho é:",
+    "opcoes": [
+      "E",
+      "D",
+      "A",
+      "C"
+    ],
+    "resposta": "D"
+  },
+  {
+    "id": 102,
+    "pergunta": "Na história da explosão, o quinto quadrinho é:",
+    "opcoes": [
+      "B",
+      "A",
+      "C",
+      "E"
+    ],
+    "resposta": "E"
+  },
+  {
+    "id": 103,
+    "pergunta": "Na história da explosão, o sexto quadrinho é:",
+    "opcoes": [
+      "A",
+      "D",
+      "C",
+      "B",
+      "F"
+    ],
+    "resposta": "F"
+  },
+  {
+    "id": 104,
+    "pergunta": "O calor do fogo ____ a água.",
+    "opcoes": [
+      "esquenta",
+      "esfria",
+      "estraga",
+      "apaga"
+    ],
+    "resposta": "esquenta"
+  },
+  {
+    "id": 105,
+    "pergunta": "Ao esquentar muito, a água ____.",
+    "opcoes": [
+      "derrete",
+      "congela",
+      "explode",
+      "ferve"
+    ],
+    "resposta": "ferve"
+  },
+  {
+    "id": 106,
+    "pergunta": "Uma parte da água sai pelo bico da chaleira em forma de ____.",
+    "opcoes": [
+      "gotas",
+      "vapor",
+      "nuvens",
+      "estrelas"
+    ],
+    "resposta": "vapor"
+  },
+  {
+    "id": 107,
+    "pergunta": "O frio ____ a água.",
+    "opcoes": [
+      "assusta",
+      "mistura",
+      "evapora",
+      "congela"
+    ],
+    "resposta": "congela"
+  },
+  {
+    "id": 108,
+    "pergunta": "A água se transforma em ____.",
+    "opcoes": [
+      "gelo",
+      "poeira",
+      "ouro",
+      "vidro"
+    ],
+    "resposta": "gelo"
+  },
+  {
+    "id": 109,
+    "pergunta": "O calor do sol ____ o gelo.",
+    "opcoes": [
+      "movimenta",
+      "derrete",
+      "estraga",
+      "queima"
+    ],
+    "resposta": "derrete"
+  },
+  {
+    "id": 110,
+    "pergunta": "O gelo se transforma novamente em ____.",
+    "opcoes": [
+      "suco",
+      "água",
+      "leite",
+      "vapor"
+    ],
+    "resposta": "água"
+  },
+  {
+    "id": 111,
+    "pergunta": "Encontre a palavra que significa o contrário da palavra assinalada na história.",
+    "opcoes": [
+      "abaixou",
+      "comeu",
+      "esvaziou",
+      "emagreceu"
+    ],
+    "resposta": "comeu"
+  },
+  {
+    "id": 112,
+    "pergunta": "Contrário de 'pior'.",
+    "opcoes": [
+      "melhor",
+      "magro",
+      "mau",
+      "comprido"
+    ],
+    "resposta": "melhor"
+  },
+  {
+    "id": 113,
+    "pergunta": "Contrário de 'gorda'.",
+    "opcoes": [
+      "macio",
+      "magro",
+      "baixo",
+      "curto"
+    ],
+    "resposta": "magro"
+  },
+  {
+    "id": 114,
+    "pergunta": "Contrário de 'caminhar'.",
+    "opcoes": [
+      "brincar",
+      "cantar",
+      "estudar",
+      "parar"
+    ],
+    "resposta": "parar"
+  },
+  {
+    "id": 115,
+    "pergunta": "Contrário de 'muito'.",
+    "opcoes": [
+      "pouco",
+      "perto",
+      "longo",
+      "alto"
+    ],
+    "resposta": "pouco"
+  },
+  {
+    "id": 116,
+    "pergunta": "Contrário de 'subir'.",
+    "opcoes": [
+      "sentar",
+      "descer",
+      "voar",
+      "mergulhar"
+    ],
+    "resposta": "descer"
+  },
+  {
+    "id": 117,
+    "pergunta": "Os ____ giram em torno do sol.",
+    "opcoes": [
+      "anéis",
+      "robôs",
+      "planetas",
+      "cometas"
+    ],
+    "resposta": "planetas"
+  },
+  {
+    "id": 118,
+    "pergunta": "Qual o nome do planeta em que vivemos?",
+    "opcoes": [
+      "Kripton",
+      "Mobius",
+      "Terra",
+      "Duna"
+    ],
+    "resposta": "Terra"
+  },
+  {
+    "id": 119,
+    "pergunta": "A ____ é um satélite da Terra.",
+    "opcoes": [
+      "Vênus",
+      "Nebulosa",
+      "Esfera",
+      "Lua"
+    ],
+    "resposta": "Lua"
+  },
+  {
+    "id": 120,
+    "pergunta": "Qual o nome do planeta que tem anéis?",
+    "opcoes": [
+      "Netuno",
+      "Sol",
+      "Lua",
+      "Saturno"
+    ],
+    "resposta": "Saturno"
+  },
+  {
+    "id": 121,
+    "pergunta": "Sou redondo e brilhante, dou calor e energia. Sem a minha forte luz a vida não existiria.",
+    "opcoes": [
+      "relógio",
+      "maçã",
+      "sol",
+      "lâmpada"
+    ],
+    "resposta": "sol"
+  },
+  {
+    "id": 122,
+    "pergunta": "Não tenho gosto, não tenho cor. Você gosta de mim quando faz calor.",
+    "opcoes": [
+      "sabonete",
+      "banana",
+      "gelo",
+      "carrinho"
+    ],
+    "resposta": "gelo"
+  },
+  {
+    "id": 123,
+    "pergunta": "Tenho asa mas não sei voar. Tenho bico e não posso bicar.",
+    "opcoes": [
+      "ventilador",
+      "pássaro",
+      "sapo",
+      "chaleira"
+    ],
+    "resposta": "chaleira"
+  },
+  {
+    "id": 124,
+    "pergunta": "Tenho escamas e não sou peixe. Tenho coroa mas não sou rei.",
+    "opcoes": [
+      "tartaruga",
+      "coroa",
+      "peixe",
+      "abacaxi"
+    ],
+    "resposta": "abacaxi"
+  },
+  {
+    "id": 125,
+    "pergunta": "Sou verde mas planta não sou. Sei falar, mas à escola não vou.",
+    "opcoes": [
+      "papagaio",
+      "árvore",
+      "camiseta",
+      "borboleta"
+    ],
+    "resposta": "papagaio"
+  },
+  {
+    "id": 126,
+    "pergunta": "Tenho barba e não sou homem. Tenho dente e não sou gente.",
+    "opcoes": [
+      "alho",
+      "tubarão",
+      "cachorro",
+      "queijo"
+    ],
+    "resposta": "alho"
+  },
+  {
+    "id": 127,
+    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de BUZZ BOMBER.",
+    "opcoes": [
+      "balão",
+      "martelo",
+      "carro",
+      "banana",
+      "parafuso"
+    ],
+    "resposta": "banana"
+  },
+  {
+    "id": 128,
+    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de JAWS.",
+    "opcoes": [
+      "jarra",
+      "relógio",
+      "calça",
+      "jacaré"
+    ],
+    "resposta": "jacaré"
+  },
+  {
+    "id": 129,
+    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de MOTO BUG.",
+    "opcoes": [
+      "maçã",
+      "caracol",
+      "cobra",
+      "folha",
+      "escova"
+    ],
+    "resposta": "maçã"
+  },
+  {
+    "id": 130,
+    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de CATERKILLER.",
+    "opcoes": [
+      "cravo/flor",
+      "cavalo",
+      "porta",
+      "xícara"
+    ],
+    "resposta": "cavalo"
+  },
+  {
+    "id": 131,
+    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de ROLLER.",
+    "opcoes": [
+      "árvore",
+      "pera",
+      "bateria",
+      "régua"
+    ],
+    "resposta": "régua"
+  },
+  {
+    "id": 132,
+    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de SPIKES.",
+    "opcoes": [
+      "olho",
+      "garfo",
+      "bola",
+      "sapato"
+    ],
+    "resposta": "sapato"
+  },
+  {
+    "id": 133,
+    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de NEWTRON.",
+    "opcoes": [
+      "vela",
+      "nuvem",
+      "morango",
+      "cadeira"
+    ],
+    "resposta": "nuvem"
+  },
+  {
+    "id": 134,
+    "pergunta": "Associe a máquina ao trabalho que ela faz: máquina de lavar.",
+    "opcoes": [
+      "A - toca-fitas",
+      "B - bolo",
+      "C - roupas",
+      "D - suco"
+    ],
+    "resposta": "C - roupas"
+  },
+  {
+    "id": 135,
+    "pergunta": "Associe a máquina ao trabalho que ela faz: liquidificador.",
+    "opcoes": [
+      "B - bolo",
+      "A - toca-fitas",
+      "E - conta",
+      "D - suco"
+    ],
+    "resposta": "D - suco"
+  },
+  {
+    "id": 136,
+    "pergunta": "Associe a máquina ao trabalho que ela faz: aparelho eletrônico.",
+    "opcoes": [
+      "D - suco",
+      "E - conta",
+      "C - roupas",
+      "A - toca-fitas"
+    ],
+    "resposta": "A - toca-fitas"
+  },
+  {
+    "id": 137,
+    "pergunta": "Associe a máquina ao trabalho que ela faz: batedeira.",
+    "opcoes": [
+      "E - conta",
+      "C - roupas",
+      "B - bolo",
+      "A - toca-fitas"
+    ],
+    "resposta": "B - bolo"
+  },
+  {
+    "id": 138,
+    "pergunta": "Associe a máquina ao trabalho que ela faz: trator.",
+    "opcoes": [
+      "D - suco",
+      "G - trigo",
+      "E - conta",
+      "A - toca-fitas"
+    ],
+    "resposta": "G - trigo"
+  },
+  {
+    "id": 139,
+    "pergunta": "Associe a máquina ao trabalho que ela faz: calculadora.",
+    "opcoes": [
+      "A - toca-fitas",
+      "E - conta",
+      "B - bolo",
+      "F - picolé"
+    ],
+    "resposta": "E - conta"
+  },
+  {
+    "id": 140,
+    "pergunta": "Associe a máquina ao trabalho que ela faz: geladeira/freezer.",
+    "opcoes": [
+      "B - bolo",
+      "F - picolé",
+      "A - toca-fitas",
+      "C - roupas"
+    ],
+    "resposta": "F - picolé"
+  },
+  {
+    "id": 141,
+    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 141.",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "A"
+  },
+  {
+    "id": 142,
+    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 142.",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "B"
+  },
+  {
+    "id": 143,
+    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 143.",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "D"
+  },
+  {
+    "id": 144,
+    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 144.",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "C"
+  },
+  {
+    "id": 145,
+    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 145.",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "F"
+  },
+  {
+    "id": 146,
+    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 146.",
+    "opcoes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "resposta": "E"
+  },
+  {
+    "id": 147,
+    "pergunta": "Ajude Sonic: sequência correta para montar Sally Acorn.",
+    "opcoes": [
+      "1, 6, 10, 14",
+      "1, 7, 11, 15",
+      "1, 14, 11, 8",
+      "1, 4, 8, 12"
+    ],
+    "resposta": "1, 4, 8, 12"
+  },
+  {
+    "id": 148,
+    "pergunta": "Ajude Sonic: sequência correta para montar Chirps.",
+    "opcoes": [
+      "5, 2, 11, 15",
+      "5, 4, 9, 16",
+      "5, 1, 8, 13",
+      "5, 10, 3, 16"
+    ],
+    "resposta": "5, 1, 8, 13"
+  },
+  {
+    "id": 149,
+    "pergunta": "Ajude Sonic: sequência correta para montar Tux.",
+    "opcoes": [
+      "9, 2, 5, 16",
+      "9, 3, 7, 15",
+      "9, 6, 15, 4",
+      "9, 1, 7, 14"
+    ],
+    "resposta": "9, 3, 7, 15"
+  },
+  {
+    "id": 150,
+    "pergunta": "Ajude Sonic: sequência correta para montar Joe Sushi.",
+    "opcoes": [
+      "13, 1, 8, 11",
+      "13, 2, 7, 12",
+      "13, 4, 6, 14",
+      "13, 3, 8, 15"
+    ],
+    "resposta": "13, 4, 6, 14"
+  }
+]
