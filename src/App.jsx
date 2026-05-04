@@ -56,7 +56,7 @@ function App() {
             <h1 id="quiz-title">Quiz do Sonic</h1>
           </div>
 
-          <img className="hero-image" src={heroImg} alt="Sonic" />
+          
         </div>
 
         <div className="status-bar" aria-label="Status do jogo">
