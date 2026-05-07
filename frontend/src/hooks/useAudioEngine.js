@@ -5,11 +5,11 @@ import sonicMusic from "../assets/audio/sonic_music.mp3";
 const MUSIC_BY_MODE = {
   dark: {
     src: shadowMusic,
-    volume: 0.002,
+    volume: 0.001,
   },
   normal: {
     src: sonicMusic,
-    volume: 0.002,
+    volume: 0.001,
   },
 };
 
