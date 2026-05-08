@@ -2,6 +2,8 @@
 
 Aplicação web inspirada no clássico **Pense Bem**, com perguntas do universo Sonic, interface interativa, pontuação por desempenho e organização da regra de jogo em uma camada de domínio.
 
+O objetivo é ser uma releitura do Pense Bem para os tempos atuais: uma experiência digital que preserva a proposta de perguntas e respostas, mas permite jogar sem precisar ter o livro físico em mãos.
+
 O projeto usa React no frontend e mantém a lógica principal do quiz em entidades de domínio, facilitando testes e evolução das regras sem acoplar tudo à interface.
 
 ## Tecnologias
