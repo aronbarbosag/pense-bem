@@ -16,9 +16,8 @@ export function getQuestionById(id) {
 function parseQuestion(element) {
   return new Question(
     element.id,
-    element.enunciado,
-    element.alternativas,
-    element.resposta
+    element.pergunta,
+    element.resposta,
+    element.opcoes
   );
 };
-

@@ -1,30 +1,41 @@
 import { useCallback, useEffect, useState } from "react";
 import { ANSWER_KEY_MAP } from "../constants/answerLetters";
 import { BOOK_CODES, DEFAULT_BOOK_CODE } from "../constants/books";
+import { Quiz } from "../domain/entities/quiz";
 import { getBookQuestions } from "../services/bookService";
-import { getCorrectAnswerScore, INITIAL_SCORE } from "../services/scoreService";
 import { readStoredScores, saveStoredScores } from "../services/scoreStorage";
 import { useAudioEngine } from "./useAudioEngine";
+
+const createBookQuiz = (bookCode) => new Quiz(getBookQuestions(bookCode));
+
+const getAnswerPoints = (mistakes) => {
+  if (mistakes === 0) return 3;
+  if (mistakes === 1) return 2;
+  if (mistakes === 2) return 1;
+  return 0;
+};
 
 export function useQuizGame() {
   const { beep, startMusic, stopMusic } = useAudioEngine();
 
   const [view, setView] = useState("menu");
   const [music, setMusic] = useState(false);
-  const [questionIndex, setQuestionIndex] = useState(0);
+  const [quiz, setQuiz] = useState(() => createBookQuiz(DEFAULT_BOOK_CODE));
+  const [, refreshGame] = useState(0);
   const [selected, setSelected] = useState(null);
   const [feedback, setFeedback] = useState(null);
-  const [score, setScore] = useState(INITIAL_SCORE);
-  const [errors, setErrors] = useState(0);
   const [bookCode, setBookCode] = useState(DEFAULT_BOOK_CODE);
-  const [activeQuestions, setActiveQuestions] = useState(() => getBookQuestions(DEFAULT_BOOK_CODE));
   const [records, setRecords] = useState(readStoredScores);
   const [completion, setCompletion] = useState(null);
   const [secretBookClicks, setSecretBookClicks] = useState(() => new Set());
   const [glitch, setGlitch] = useState(false);
   const [dash, setDash] = useState(false);
 
-  const currentQuestion = activeQuestions[questionIndex];
+  const questionIndex = quiz.currentQuestionIndex;
+  const currentQuestion = quiz.getCurrentQuestion();
+  const score =
+    feedback === "correct" ? quiz.points.getPoint() + getAnswerPoints(quiz.mistakes) : quiz.points.getPoint();
+  const errors = feedback === "wrong" ? Math.min(3, quiz.mistakes + 1) : quiz.mistakes;
   const isPlaying = view === "game";
   const isSecretMascotUnlocked = secretBookClicks.size === BOOK_CODES.length;
 
@@ -55,24 +66,27 @@ export function useQuizGame() {
     });
   }, []);
 
-  const showNextQuestion = useCallback((finalScore = score) => {
+  const showNextQuestion = useCallback((answer) => {
     setDash(true);
 
     setTimeout(() => {
-      if (questionIndex >= activeQuestions.length - 1) {
+      quiz.answerCurrentQuestion(answer);
+      const finalScore = quiz.points.getPoint();
+
+      if (quiz.isQuizFinished()) {
         updateRecord(bookCode, finalScore);
         setCompletion({ bookCode, score: finalScore });
         setView("complete");
-        setQuestionIndex(0);
+        setQuiz(createBookQuiz(bookCode));
       } else {
-        setQuestionIndex((prev) => prev + 1);
+        refreshGame((currentValue) => currentValue + 1);
       }
 
       setSelected(null);
       setFeedback(null);
       setDash(false);
     }, 420);
-  }, [activeQuestions.length, bookCode, questionIndex, score, updateRecord]);
+  }, [bookCode, quiz, updateRecord]);
 
   const startBook = useCallback((nextBookCode) => {
     stopMusic();
@@ -83,8 +97,7 @@ export function useQuizGame() {
       return nextClicks;
     });
     setBookCode(nextBookCode);
-    setActiveQuestions(getBookQuestions(nextBookCode));
-    setQuestionIndex(0);
+    setQuiz(createBookQuiz(nextBookCode));
     setSelected(null);
     setFeedback(null);
     setGlitch(false);
@@ -97,9 +110,7 @@ export function useQuizGame() {
   const answerQuestion = useCallback((option) => {
     if (feedback || !currentQuestion) return;
 
-    const correct = option === currentQuestion.answer;
-    const earned = correct ? getCorrectAnswerScore(questionIndex) : 0;
-    const nextScore = score + earned;
+    const correct = currentQuestion.isRightAnswer(option);
 
     setSelected(option);
     setFeedback(correct ? "correct" : "wrong");
@@ -107,24 +118,19 @@ export function useQuizGame() {
 
     if (correct) {
       setGlitch(false);
-      setScore(nextScore);
     } else {
-      setErrors((prev) => Math.min(3, prev + 1));
       setGlitch(true);
       setTimeout(() => setGlitch(false), 500);
     }
 
-    setTimeout(() => showNextQuestion(nextScore), 900);
-  }, [beep, currentQuestion, feedback, questionIndex, score, showNextQuestion]);
+    setTimeout(() => showNextQuestion(option), 900);
+  }, [beep, currentQuestion, feedback, showNextQuestion]);
 
   const resetToMenu = useCallback(() => {
     setView("menu");
-    setQuestionIndex(0);
+    setQuiz(createBookQuiz(bookCode));
     setSelected(null);
     setFeedback(null);
-    setScore(INITIAL_SCORE);
-    setErrors(0);
-    setActiveQuestions(getBookQuestions(bookCode));
     setCompletion(null);
     setGlitch(false);
     setDash(false);
@@ -158,7 +164,7 @@ export function useQuizGame() {
     isSecretMascotUnlocked,
     music,
     questionIndex,
-    totalQuestions: activeQuestions.length,
+    totalQuestions: quiz.questions.length,
     records,
     resetToMenu,
     score,
