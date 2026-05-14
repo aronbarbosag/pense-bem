@@ -13,6 +13,8 @@ const MUSIC_BY_MODE = {
   },
 };
 
+const BEEP_VOLUME = 0.045;
+
 export function useAudioEngine() {
   const ctxRef = useRef(null);
   const musicRef = useRef(null);
@@ -49,7 +51,7 @@ export function useAudioEngine() {
     }
 
     gain.gain.setValueAtTime(0.001, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.16, ctx.currentTime + 0.02);
+    gain.gain.exponentialRampToValueAtTime(BEEP_VOLUME, ctx.currentTime + 0.02);
     gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.25);
 
     osc.start();
