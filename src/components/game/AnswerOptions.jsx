@@ -6,7 +6,7 @@ export function AnswerOptions({ feedback, onAnswer, question, selected }) {
     <div className="mt-5 grid gap-3">
       {question.options.map((option, index) => {
         const isSelected = selected === option;
-        const isCorrect = feedback && option === question.answer;
+        const isCorrect = feedback === "correct" && option === question.answer;
         const isWrong = feedback === "wrong" && isSelected;
 
         return (
