@@ -73,6 +73,7 @@
   {
     "id": 12,
     "pergunta": "Outro amigo de Sonic é Porker Lewis, um ____.",
+    "imagem": "questao_12.png",
     "opcoes": ["focinho", "porquinho", "rabinho", "tatu"],
     "resposta": "porquinho"
   },
@@ -197,54 +198,63 @@
   {
     "id": 31,
     "pergunta": "Qual é o nome da figura numerada 31?",
+    "imagem": "questao_31_a_38.png",
     "opcoes": ["televisão", "computador", "microondas", "torradeira"],
     "resposta": "computador"
   },
   {
     "id": 32,
     "pergunta": "Qual é o nome da figura numerada 32?",
+    "imagem": "questao_31_a_38.png",
     "opcoes": ["eletricista", "bombeiro", "médico", "Sonic"],
     "resposta": "Sonic"
   },
   {
     "id": 33,
     "pergunta": "Qual é o nome da figura numerada 33?",
+    "imagem": "questao_31_a_38.png",
     "opcoes": ["funil", "balde", "vaso", "escorredor"],
     "resposta": "funil"
   },
   {
     "id": 34,
     "pergunta": "Qual é o nome da figura numerada 34?",
+    "imagem": "questao_31_a_38.png",
     "opcoes": ["ferradura", "ímã", "serrote", "martelo"],
     "resposta": "ímã"
   },
   {
     "id": 35,
     "pergunta": "Qual é o nome da figura numerada 35?",
+    "imagem": "questao_31_a_38.png",
     "opcoes": ["tomada", "painel", "cenoura", "vassoura"],
     "resposta": "tomada"
   },
   {
     "id": 36,
     "pergunta": "Qual é o nome da figura numerada 36?",
+    "imagem": "questao_31_a_38.png",
     "opcoes": ["lanterna", "chama", "lâmpada", "botijão"],
     "resposta": "chama"
   },
   {
     "id": 37,
     "pergunta": "Qual é o nome da figura numerada 37?",
+    "imagem": "questao_31_a_38.png",
     "opcoes": ["bastão", "lápis", "careta", "giz"],
     "resposta": "giz"
   },
   {
     "id": 38,
     "pergunta": "Qual é o nome da figura numerada 38?",
+    "imagem": "questao_31_a_38.png",
     "opcoes": ["tubo de ensaio", "copo de água", "regador", "peneira"],
     "resposta": "tubo de ensaio"
   },
   {
     "id": 39,
     "pergunta": "O CROC funciona como um grande ____.",
+    "imagem": "questao_39.png",
     "opcoes": ["relógio", "nariz", "ímã", "ventilador"],
     "resposta": "ímã"
   },
@@ -347,36 +357,42 @@
   {
     "id": 51,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 51?",
+    "imagem": "questao_51_a_56.png",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "C"
   },
   {
     "id": 52,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 52?",
+    "imagem": "questao_51_a_56.png",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "F"
   },
   {
     "id": 53,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 53?",
+    "imagem": "questao_51_a_56.png",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "A"
   },
   {
     "id": 54,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 54?",
+    "imagem": "questao_51_a_56.png",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "E"
   },
   {
     "id": 55,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 55?",
+    "imagem": "questao_51_a_56.png",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "B"
   },
   {
     "id": 56,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 56?",
+    "imagem": "questao_51_a_56.png",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "D"
   },
@@ -629,36 +645,42 @@
   {
     "id": 98,
     "pergunta": "Na história da explosão, o primeiro quadrinho é:",
+    "imagem": "questao_98_a_103.png",
     "opcoes": ["E", "C", "B", "A"],
     "resposta": "A"
   },
   {
     "id": 99,
     "pergunta": "Na história da explosão, o segundo quadrinho é:",
+    "imagem": "questao_98_a_103.png",
     "opcoes": ["A", "B", "C", "D"],
     "resposta": "C"
   },
   {
     "id": 100,
     "pergunta": "Na história da explosão, o terceiro quadrinho é:",
+    "imagem": "questao_98_a_103.png",
     "opcoes": ["B", "A", "C", "F"],
     "resposta": "B"
   },
   {
     "id": 101,
     "pergunta": "Na história da explosão, o quarto quadrinho é:",
+    "imagem": "questao_98_a_103.png",
     "opcoes": ["E", "D", "A", "C"],
     "resposta": "D"
   },
   {
     "id": 102,
     "pergunta": "Na história da explosão, o quinto quadrinho é:",
+    "imagem": "questao_98_a_103.png",
     "opcoes": ["B", "A", "C", "E"],
     "resposta": "E"
   },
   {
     "id": 103,
     "pergunta": "Na história da explosão, o sexto quadrinho é:",
+    "imagem": "questao_98_a_103.png",
     "opcoes": ["A", "D", "C", "B", "F"],
     "resposta": "F"
   },
