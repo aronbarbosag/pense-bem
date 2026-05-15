@@ -7,6 +7,7 @@ import question51a56Image from '../assets/questions/questao_51_a_56.jpg'
 import question39Image from '../assets/questions/questao_39.jpg'
 import question98a103Image from '../assets/questions/questao_98_a_103.jpg'
 import question87a90Image from '../assets/questions/questao_87_a_90.jpg'
+import question57a59Image from '../assets/questions/questão_57_a_59.png'
 
 const QUESTION_IMAGES = {
   "questao_25.jpg": question25Image,
@@ -17,6 +18,7 @@ const QUESTION_IMAGES = {
   "questao_39.jpg": question39Image,
   'questao_98_a_103.jpg': question98a103Image,
   'questao_87_a_90.jpg': question87a90Image,
+  'questao_57_a_59.png': question57a59Image,
 };
 
 export const QUESTIONS = rawQuestions.map((question, index) => ({
