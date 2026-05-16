@@ -1,19 +1,19 @@
 export class Points {
 
   constructor() {
-    this.points = 0;
+    this.totalPoints = 0;
   }
 
-  getPoint(){
-    return this.points;
+  getTotal(){
+    return this.totalPoints;
   }
 
-  addPoint(number = 1) {
-    this.points += number;
+  addPoints(pointsToAdd = 1) {
+    this.totalPoints += pointsToAdd;
   }
 
   resetPoints() {
-    this.points = 0;
+    this.totalPoints = 0;
   }
 
 }

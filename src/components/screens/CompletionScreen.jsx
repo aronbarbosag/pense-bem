@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, Trophy } from "lucide-react";
+import sonicDancing from "../../assets/sonic_dancing.gif";
+import { SonicDark } from "../common/SonicDark";
 
-export function CompletionScreen({ completion, onBackToMenu, onOpenScores }) {
+export function CompletionScreen({ completedBookResult, onBackToMenu, onOpenScores }) {
   return (
     <motion.div
       key="complete"
@@ -10,6 +12,8 @@ export function CompletionScreen({ completion, onBackToMenu, onOpenScores }) {
       exit={{ opacity: 0, y: -18 }}
       className="text-center"
     >
+      <SonicDark alt="Sonic dançando" src={sonicDancing} />
+
       <div className="mx-auto grid h-20 w-20 place-items-center rounded-full border-2 border-amber-300 bg-amber-300/10 text-amber-300 shadow-[0_0_24px_rgba(255,184,0,.28)]">
         <Trophy size={34} />
       </div>
@@ -19,11 +23,11 @@ export function CompletionScreen({ completion, onBackToMenu, onOpenScores }) {
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed tracking-[.12em] text-slate-300">
-        Você terminou o livro {completion?.bookCode}. Sua pontuação nessa rodada foi:
+        Você terminou o livro {completedBookResult?.bookCode}. Sua pontuação nessa rodada foi:
       </p>
 
       <div className="mt-5 text-5xl font-black text-amber-300 drop-shadow-[0_0_14px_rgba(255,184,0,.45)]">
-        {String(completion?.score ?? 0).padStart(3, "0")}
+        {String(completedBookResult?.score ?? 0).padStart(3, "0")}
       </div>
 
       <button

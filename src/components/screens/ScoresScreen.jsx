@@ -3,8 +3,8 @@ import { ArrowLeft, Trophy } from "lucide-react";
 import { BOOK_CODES } from "../../constants/books";
 import { getTotalScore } from "../../services/scoreStorage";
 
-export function ScoresScreen({ onBack, records }) {
-  const totalScore = getTotalScore(records);
+export function ScoresScreen({ highestScoresByBookCode, onBack }) {
+  const totalScore = getTotalScore(highestScoresByBookCode);
 
   return (
     <motion.div
@@ -37,7 +37,7 @@ export function ScoresScreen({ onBack, records }) {
                 Livro {bookCode}
               </span>
               <strong className="text-lg text-amber-300">
-                {String(records[bookCode]).padStart(3, "0")}
+                {String(highestScoresByBookCode[bookCode]).padStart(3, "0")}
               </strong>
             </div>
           ))}
