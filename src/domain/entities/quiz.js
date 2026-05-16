@@ -20,7 +20,7 @@ export class Quiz {
     currentQuestion.validateAnswer(answer, currentQuestion);
 
     if (currentQuestion.isRightAnswer(answer)) {
-      this.verifyPointsForCorrectAnswer();
+      this.addPointsForCorrectAnswer();
       this.nextQuestion();
 
 
@@ -28,7 +28,7 @@ export class Quiz {
 
     } else {
       this.mistakes += 1;
-      this.verifyMoveToNextQuestion();
+      this.advanceAfterTooManyMistakes();
     }
 
 
@@ -36,15 +36,15 @@ export class Quiz {
 
   }
 
-  verifyPointsForCorrectAnswer() {
+  addPointsForCorrectAnswer() {
     if (this.mistakes === 0) {
-      this.points.addPoint(3);
+      this.points.addPoints(3);
     }
     else if (this.mistakes === 1) {
-      this.points.addPoint(2);
+      this.points.addPoints(2);
     }
     else if (this.mistakes === 2) {
-      this.points.addPoint();
+      this.points.addPoints();
     }
 
     else{
@@ -56,7 +56,7 @@ export class Quiz {
 
   }
 
-  verifyMoveToNextQuestion() {
+  advanceAfterTooManyMistakes() {
     if (this.mistakes > 2) {
       this.nextQuestion() ;
       this.mistakes = 0;

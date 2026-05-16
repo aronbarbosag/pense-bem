@@ -9,14 +9,14 @@ import { ScoresScreen } from "./components/screens/ScoresScreen";
 import { useQuizGame } from "./hooks/useQuizGame";
 import shadowMascot from "./assets/shadow.gif";
 
-const getTopLabel = ({ completion, currentQuestion, isPlaying, view }) => {
+const getTopLabel = ({ completedBookResult, currentQuestion, isPlaying, view }) => {
   if (isPlaying && currentQuestion) {
     return `Questão ${String(currentQuestion.id).padStart(3, "0")}`;
   }
 
   if (view === "how") return "Como Jogar";
   if (view === "scores") return "Pontuações";
-  if (view === "complete" && completion) return `Livro ${completion.bookCode}`;
+  if (view === "complete" && completedBookResult) return `Livro ${completedBookResult.bookCode}`;
 
   return "Pense Bem®";
 };
@@ -26,10 +26,10 @@ export default function App() {
 
   return (
     <Shell
-      glitch={game.glitch}
+      isGlitchEffectActive={game.isGlitchEffectActive}
       theme={game.isSecretMascotUnlocked ? "dark" : "normal"}
       topLabel={getTopLabel({
-        completion: game.completion,
+        completedBookResult: game.completedBookResult,
         currentQuestion: game.currentQuestion,
         isPlaying: game.isPlaying,
         view: game.view,
@@ -62,14 +62,14 @@ export default function App() {
 
         {game.view === "scores" && (
           <ScoresScreen
-            records={game.records}
-            onBack={() => game.setView(game.completion ? "complete" : "menu")}
+            highestScoresByBookCode={game.highestScoresByBookCode}
+            onBack={() => game.setView(game.completedBookResult ? "complete" : "menu")}
           />
         )}
 
         {game.view === "complete" && (
           <CompletionScreen
-            completion={game.completion}
+            completedBookResult={game.completedBookResult}
             onBackToMenu={game.resetToMenu}
             onOpenScores={() => game.setView("scores")}
           />
@@ -78,15 +78,15 @@ export default function App() {
         {game.view === "game" && game.currentQuestion && (
           <GameScreen
             bookCode={game.bookCode}
-            dash={game.dash}
             errors={game.errors}
             feedback={game.feedback}
+            isQuestionTransitionActive={game.isQuestionTransitionActive}
             onAnswer={game.answerQuestion}
             onReset={game.resetToMenu}
             question={game.currentQuestion}
             questionIndex={game.questionIndex}
             score={game.score}
-            selected={game.selected}
+            selectedAnswerOption={game.selectedAnswerOption}
             totalQuestions={game.totalQuestions}
           />
         )}

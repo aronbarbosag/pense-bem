@@ -1,34 +1,34 @@
 export class Question {
 
-  constructor(id, pergunta, resposta, opcoes, metadata = {}) {
+  constructor(id, questionText, correctAnswer, answerOptions, metadata = {}) {
     this.id = id;
-    this.pergunta = pergunta;
-    this.resposta = resposta;
-    this.opcoes = opcoes;
+    this.questionText = questionText;
+    this.correctAnswer = correctAnswer;
+    this.answerOptions = answerOptions;
     this.theme = metadata.theme ?? "Sonic Pense Bem";
     this.image = metadata.image ?? null;
 
   }
 
   get question() {
-    return this.pergunta;
+    return this.questionText;
   }
 
   get answer() {
-    return this.resposta;
+    return this.correctAnswer;
   }
 
   get options() {
-    return this.opcoes;
+    return this.answerOptions;
   }
 
-  isRightAnswer(answer) {
-    this.validateAnswer(answer);
-    return this.resposta === answer;
+  isRightAnswer(selectedAnswer) {
+    this.validateAnswer(selectedAnswer);
+    return this.correctAnswer === selectedAnswer;
   }
 
-  validateAnswer(answer) {
-    if (!this.opcoes.includes(answer)) {
+  validateAnswer(selectedAnswer) {
+    if (!this.answerOptions.includes(selectedAnswer)) {
       throw new Error('Opção inválida');
     }
 
