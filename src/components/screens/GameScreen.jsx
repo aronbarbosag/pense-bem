@@ -8,15 +8,15 @@ import { ShortcutPanel } from "../game/ShortcutPanel";
 
 export function GameScreen({
   bookCode,
-  dash,
   errors,
   feedback,
+  isQuestionTransitionActive,
   onAnswer,
   onReset,
   question,
   questionIndex,
   score,
-  selected,
+  selectedAnswerOption,
   totalQuestions,
 }) {
   return (
@@ -37,7 +37,7 @@ export function GameScreen({
       <AnimatePresence mode="wait">
         <motion.div
           key={questionIndex}
-          initial={{ opacity: 0, x: dash ? 120 : 0 }}
+          initial={{ opacity: 0, x: isQuestionTransitionActive ? 120 : 0 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -120 }}
           transition={{ duration: 0.35, ease: "easeOut" }}
@@ -47,7 +47,7 @@ export function GameScreen({
             feedback={feedback}
             onAnswer={onAnswer}
             question={question}
-            selected={selected}
+            selectedAnswerOption={selectedAnswerOption}
           />
         </motion.div>
       </AnimatePresence>

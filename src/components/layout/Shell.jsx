@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Particles } from "./Particles";
 
-export function Shell({ children, glitch, theme = "normal", topLabel = "Pense Bem®" }) {
+export function Shell({ children, isGlitchEffectActive, theme = "normal", topLabel = "Pense Bem®" }) {
   const darkTheme = theme === "dark";
 
   return (
@@ -18,7 +18,7 @@ export function Shell({ children, glitch, theme = "normal", topLabel = "Pense Be
 
       <motion.section
         animate={
-          glitch
+          isGlitchEffectActive
             ? {
                 x: [0, -8, 8, -6, 6, 0],
                 filter: [

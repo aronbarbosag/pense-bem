@@ -44,14 +44,14 @@ export function MenuScreen({
       </div>
 
       <div className="mt-5 flex flex-wrap justify-center gap-2">
-        {BOOK_CODES.map((bookCode, index) => (
+        {BOOK_CODES.map((bookCode, bookCodeIndex) => (
           <button
             key={bookCode}
             onClick={() => onSelectBook(bookCode)}
             className={`rounded-md border px-3 py-2 text-[9px] font-bold transition hover:-translate-y-0.5 ${
               selectedBookCode === bookCode
                 ? "border-amber-400 bg-amber-400/12 text-amber-300"
-                : index % 2
+                : bookCodeIndex % 2
                   ? "border-pink-600/50 text-pink-400 hover:bg-pink-600/10"
                   : "border-cyan-300/50 text-cyan-300 hover:bg-cyan-300/10"
             }`}

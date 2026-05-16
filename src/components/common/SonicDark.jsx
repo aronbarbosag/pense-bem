@@ -1,6 +1,6 @@
 import sonicGothic from "../../assets/sonic.gif";
 
-export function SonicDark({ glow = true, src = sonicGothic }) {
+export function SonicDark({ alt = "Sonic", glow = true, src = sonicGothic }) {
   return (
     <div className="relative mx-auto flex w-full items-center justify-center">
       <div className="relative flex max-h-[220px] items-center justify-center">
@@ -13,7 +13,7 @@ export function SonicDark({ glow = true, src = sonicGothic }) {
 
         <img
           src={src}
-          alt="Sonic gótico"
+          alt={alt}
           className={`relative z-10 mx-auto max-h-[200px] w-auto select-none object-contain ${
             glow ? "drop-shadow-[0_0_18px_rgba(0,246,255,.45)]" : ""
           }`}

@@ -399,28 +399,28 @@
   {
     "id": 57,
     "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: TOPÁZIO.",
-    "imagem": "questão_57_a_59.png",
+    "imagem": "questao_57_a_59.jpg",
     "opcoes": ["vermelho", "amarelo/laranja", "azul", "verde"],
     "resposta": "amarelo/laranja"
   },
   {
     "id": 58,
     "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: ÁGUA-MARINHA.",
-    "imagem": "questão_57_a_59.png",
+    "imagem": "questao_57_a_59.jpg",
     "opcoes": ["vermelho", "amarelo", "azul-claro", "verde"],
     "resposta": "azul-claro"
   },
   {
     "id": 59,
     "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: RUBI.",
-    "imagem": "questão_57_a_59.png",
+    "imagem": "questao_57_a_59.jpg",
     "opcoes": ["vermelho", "amarelo", "azul", "verde"],
     "resposta": "vermelho"
   },
   {
-    
+
     "id": 60,
-    "pergunta": "<strong>O Dr. K. colocou o mal em seis Esmeraldas Caóticas, mas elas ficaram perigosas e podiam explodir. Para controlar essa força, ele precisava encontrar uma sétima pedra: a Esmeralda Cinza.</strong> A esmeralda de que o Dr. K. precisava tinha de ser da cor ____.",
+    "pergunta": "Os amigos de Sonic ajudaram o Dr. K a coletar seis Esmeraldas Caóticas de cores: verde, laranja, vermelha, azul, roxa e branca.Faltou a sétima esmeralda a mais importante que era diferente das outras pois era da cor...",
     "opcoes": ["cinza", "roxa", "verde", "vermelha"],
     "resposta": "cinza"
   },
