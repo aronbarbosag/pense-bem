@@ -916,61 +916,71 @@
   },
   {
     "id": 141,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 141.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 141.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "D"
   },
   {
     "id": 142,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 142.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 142.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "C"
   },
   {
     "id": 143,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 143.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 143.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "E"
   },
   {
     "id": 144,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 144.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 144.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "A"
   },
   {
     "id": 145,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 145.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 145.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "F"
   },
   {
     "id": 146,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 146.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 146.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "B"
   },
   {
     "id": 147,
     "pergunta": "Ajude Sonic: sequência correta para montar Sally Acorn.",
+    "imagem": "questao_147_a_150.jpg",
     "opcoes": ["1, 6, 10, 14", "1, 7, 11, 15", "1, 14, 11, 8", "1, 4, 8, 12"],
     "resposta": "1, 14, 11, 8"
   },
   {
     "id": 148,
     "pergunta": "Ajude Sonic: sequência correta para montar Chirps.",
+    "imagem": "questao_147_a_150.jpg",
     "opcoes": ["5, 2, 11, 15", "5, 4, 9, 16", "5, 1, 8, 13", "5, 10, 3, 16"],
     "resposta": "5, 10, 3, 16"
   },
   {
     "id": 149,
     "pergunta": "Ajude Sonic: sequência correta para montar Tux.",
+    "imagem": "questao_147_a_150.jpg",
     "opcoes": ["9, 2, 5, 16", "9, 3, 7, 15", "9, 6, 15, 4", "9, 1, 7, 14"],
     "resposta": "9, 6, 15, 4"
   },
   {
     "id": 150,
     "pergunta": "Ajude Sonic: sequência correta para montar Joe Sushi.",
+    "imagem": "questao_147_a_150.jpg",
     "opcoes": ["13, 1, 8, 11", "13, 2, 7, 12", "13, 4, 6, 14", "13, 3, 8, 15"],
     "resposta": "13, 2, 7, 12"
   }

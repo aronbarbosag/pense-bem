@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, Trophy } from "lucide-react";
 import sonicDancing from "../../assets/sonic_dancing.gif";
-import { SonicDark } from "../common/SonicDark";
 
 export function CompletionScreen({ completedBookResult, onBackToMenu, onOpenScores }) {
   return (
@@ -12,7 +11,20 @@ export function CompletionScreen({ completedBookResult, onBackToMenu, onOpenScor
       exit={{ opacity: 0, y: -18 }}
       className="text-center"
     >
-      <SonicDark alt="Sonic dançando" src={sonicDancing} />
+      <div className="relative mx-auto flex w-full items-center justify-center">
+        <div className="relative flex max-h-[220px] items-center justify-center">
+          <div className="absolute inset-x-10 inset-y-8 rounded-full bg-cyan-300/20 blur-2xl" />
+          <div className="absolute inset-x-14 inset-y-12 rounded-full bg-amber-300/20 blur-xl" />
+
+          <img
+            src={sonicDancing}
+            alt="Sonic dançando"
+            className="relative z-10 mx-auto max-h-[200px] w-auto select-none object-contain"
+            draggable="false"
+            style={{ clipPath: "inset(4px)" }}
+          />
+        </div>
+      </div>
 
       <div className="mx-auto grid h-20 w-20 place-items-center rounded-full border-2 border-amber-300 bg-amber-300/10 text-amber-300 shadow-[0_0_24px_rgba(255,184,0,.28)]">
         <Trophy size={34} />

@@ -46,13 +46,18 @@ export function useQuizGame() {
   }, []);
 
   useEffect(() => {
-    if (music) {
+    if (view === "complete") {
+      startMusic("completion");
+      return;
+    }
+
+    if (music && view !== "game") {
       startMusic(musicMode);
       return;
     }
 
     stopMusic();
-  }, [music, musicMode, startMusic, stopMusic]);
+  }, [music, musicMode, startMusic, stopMusic, view]);
 
   const updateRecord = useCallback((finishedBookCode, finalScore) => {
     setHighestScoresByBookCode((currentHighestScoresByBookCode) => {
