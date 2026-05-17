@@ -21,7 +21,6 @@ const QUESTION_IMAGES = {
   'questao_98_a_103.jpg': question98a103Image,
   'questao_87_a_90.jpg': question87a90Image,
   'questao_57_a_59.jpg': question57a59Image,
-  'questão_57_a_59.jpg': question57a59Image,
   'questao_141_a_146.jpg': question141a146Image,
   'questao_147_a_150.jpg': question147a150Image,
 };
