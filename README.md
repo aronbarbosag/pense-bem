@@ -1,6 +1,6 @@
 # Pense Bem Sonic
 
-Uma releitura web do clássico **Pense Bem**, com perguntas inspiradas no universo Sonic e em desafios de raciocínio. O jogo roda direto no navegador, sem precisar do aparelho original, do livro físico ou de assinatura do GPT.
+Uma releitura web do clássico **Pense Bem**, com perguntas inspiradas no universo Sonic e em desafios de raciocínio. O jogo roda direto no navegador, sem precisar do aparelho original ou do livro de consulta.
 
 ![Tela inicial do Pense Bem Sonic](./src/assets/app_tela_inicial.png)
 
