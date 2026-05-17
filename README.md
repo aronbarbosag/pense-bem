@@ -1,10 +1,15 @@
 # Pense Bem
 
-Aplicação web inspirada no clássico **Pense Bem**, com perguntas do universo Sonic, interface interativa, pontuação por desempenho e organização da regra de jogo em uma camada de domínio.
+Aplicação web inspirada no clássico **Pense Bem**, com perguntas de física básica e sobre o universo Sonic.
 
 O objetivo é ser uma releitura do Pense Bem para os tempos atuais: uma experiência digital que preserva a proposta de perguntas e respostas, mas permite jogar sem precisar ter o livro físico em mãos.
 
 O projeto usa React no frontend e mantém a lógica principal do quiz em entidades de domínio, facilitando testes e evolução das regras sem acoplar tudo à interface.
+
+
+# Imagem da aplicação
+<img width="764" height="932" alt="image" src="https://github.com/user-attachments/assets/c3d976e8-6566-4a2a-a8e2-a73bc6e26dc2" />
+
 
 ## Tecnologias
 
@@ -121,9 +126,3 @@ docker stop pense-bem-test
 - Após três erros, o jogo avança para a próxima pergunta.
 - O melhor resultado de cada livro é salvo no navegador.
 
-## Build de Produção
-
-O Dockerfile usa build em múltiplos estágios:
-
-- `node:24.13-alpine` para instalar dependências e gerar os arquivos estáticos.
-- `nginx:1.29-alpine` para servir o conteúdo final da pasta `dist`.
