@@ -8,6 +8,8 @@ import question39Image from '../assets/questions/questao_39.jpg'
 import question98a103Image from '../assets/questions/questao_98_a_103.jpg'
 import question87a90Image from '../assets/questions/questao_87_a_90.jpg'
 import question57a59Image from '../assets/questions/questao_57_a_59.jpg'
+import question141a146Image from '../assets/questions/questao_141_a_146.jpg'
+import question147a150Image from '../assets/questions/questao_147_a_150.jpg'
 
 const QUESTION_IMAGES = {
   "questao_25.jpg": question25Image,
@@ -20,6 +22,8 @@ const QUESTION_IMAGES = {
   'questao_87_a_90.jpg': question87a90Image,
   'questao_57_a_59.jpg': question57a59Image,
   'questão_57_a_59.jpg': question57a59Image,
+  'questao_141_a_146.jpg': question141a146Image,
+  'questao_147_a_150.jpg': question147a150Image,
 };
 
 export const QUESTIONS = rawQuestions.map((rawQuestion, rawQuestionIndex) => ({
