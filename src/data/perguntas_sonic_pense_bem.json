@@ -887,13 +887,13 @@
   {
     "id": 136,
     "pergunta": "Associe a máquina ao trabalho que ela faz: aparelho eletrônico.",
-    "opcoes": ["D - suco", "E - conta", "C - roupas", "A - toca-fitas"],
+    "opcoes": ["A - toca-fitas", "B - suco", "C - conta", "D - roupas"],
     "resposta": "A - toca-fitas"
   },
   {
     "id": 137,
     "pergunta": "Associe a máquina ao trabalho que ela faz: batedeira.",
-    "opcoes": ["E - conta", "C - roupas", "B - bolo", "A - toca-fitas"],
+    "opcoes": ["A - conta", "B - bolo","C - roupas", "D - toca-fitas"],
     "resposta": "B - bolo"
   },
   {
