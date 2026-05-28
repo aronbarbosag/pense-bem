@@ -1,155 +1,69 @@
-# Pense Bem Sonic
+# Pense Bem Sonic Mobile
 
-Uma releitura web do clássico **Pense Bem**, com perguntas inspiradas no universo Sonic e em desafios de raciocínio. O jogo roda direto no navegador, sem precisar do aparelho original ou do livro de consulta.
-
-![Tela inicial do Pense Bem Sonic](./src/assets/app_tela_inicial.png)
+Aplicacao mobile em **React Native + Expo** inspirada no classico Pense Bem, com perguntas tematicas do Sonic, livros por codigo, imagens de apoio, pontuacao por tentativa e historico local no aparelho.
 
 ## Destaques
 
-- Quiz dividido por códigos de livros.
-- 30 perguntas por livro, com pontuação por tentativa.
-- Livro especial `026` com perguntas aleatórias dos livros anteriores.
-- Imagens de apoio em algumas questões.
-- Pontuações salvas localmente no navegador.
-- Música, efeitos sonoros e animações temáticas.
-- Easter Egg com personagem secreto ao interagir com todos os códigos de livro.
-- Interface responsiva construída com React, Vite e Tailwind CSS.
-
-## Telas
-
-<p align="center">
-  <img width="420" alt="Tela inicial com seleção de livros" src="./src/assets/app_tela_inicial.png" />
-  <br />
-  <em>Tela inicial com seleção dos livros.</em>
-</p>
-
-<p align="center">
-  <img width="420" alt="Tela de como jogar" src="./src/assets/app_tela_como_jogar.png" />
-  <br />
-  <em>Instruções resumidas de como jogar.</em>
-</p>
-
-<p align="center">
-  <img width="420" alt="Questão com imagem de apoio" src="./src/assets/app_questao_com_imagem.png" />
-  <br />
-  <em>Questões com alternativas e imagens de apoio.</em>
-</p>
-
-<p align="center">
-  <img width="420" alt="Tela de livro finalizado" src="./src/assets/app_tela_livro_finalizado.png" />
-  <br />
-  <em>Resultado ao finalizar um livro.</em>
-</p>
-
-<p align="center">
-  <img width="420" alt="Tela de pontuações" src="./src/assets/app_tela_pontuacoes.png" />
-  <br />
-  <em>Histórico de melhores pontuações.</em>
-</p>
-
-## Personagens
-
-<p align="center">
-  <img height="140" alt="Sonic" src="./src/assets/sonic.gif" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="140" alt="Sonic dançando" src="./src/assets/sonic_dancing.gif" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="140" alt="Shadow" src="./src/assets/shadow.gif" />
-</p>
+- App Expo com interface nativa para Android, iOS e preview web.
+- Quiz dividido pelos livros `021` a `026`.
+- 30 perguntas por livro, com pontuacao por tentativa.
+- Livro especial `026` com perguntas aleatorias dos outros livros.
+- Imagens de apoio em algumas questoes.
+- Pontuacoes salvas localmente com AsyncStorage.
+- Musica de fundo com Expo AV e feedback por vibracao.
+- Easter egg com personagem secreto ao jogar todos os codigos.
+- Regras de dominio preservadas e cobertas por Jest.
 
 ## Regras do Quiz
 
-- Cada pergunta permite até 3 tentativas.
-- Acerto na 1ª tentativa vale 3 pontos.
-- Acerto na 2ª tentativa vale 2 pontos.
-- Acerto na 3ª tentativa vale 1 ponto.
-- Após 3 erros, o jogo avança sem pontuar.
-- A pontuação máxima por livro é 90 pontos.
-
-## Easter Egg
-
-Clique pelo menos uma vez em cada código de livro na tela inicial. Ao completar todos, um personagem secreto é desbloqueado na interface.
-
-## Arquitetura
-
-A lógica principal do quiz fica centralizada na camada de domínio, em `src/domain`. Essa separação mantém as regras do jogo independentes da interface, facilita testes automatizados e deixa a evolução do projeto mais simples.
-
-## Tecnologias
-
-- React
-- Vite
-- Tailwind CSS
-- Framer Motion
-- Lucide React
-- Jest
-- Docker
-- Nginx
+- Cada pergunta permite ate 3 tentativas.
+- Acerto na primeira tentativa vale 3 pontos.
+- Acerto na segunda tentativa vale 2 pontos.
+- Acerto na terceira tentativa vale 1 ponto.
+- Apos 3 erros, o jogo avanca sem pontuar.
+- A pontuacao maxima por livro e 90 pontos.
 
 ## Como Rodar
 
-Instale as dependências:
+Instale as dependencias:
 
 ```bash
 npm install
 ```
 
-Inicie o ambiente de desenvolvimento:
+Inicie o Expo:
 
 ```bash
-npm run dev
+npm start
 ```
 
-Acesse:
-
-```text
-http://localhost:5173
-```
-
-## Scripts Úteis
+Use o QR Code do Expo Go ou rode diretamente:
 
 ```bash
-npm run lint      # verifica padrões de código
-npm test          # executa os testes
-npm run build     # gera a build de produção
-npm run preview   # pré-visualiza a build
+npm run android
+npm run ios
+npm run web
 ```
 
-## Docker
-
-Crie a imagem:
+## Scripts
 
 ```bash
-docker build --no-cache -t pense-bem:test .
-```
-
-Suba o container:
-
-```bash
-docker run -d --rm --name pense-bem-test -p 8080:80 pense-bem:test
-```
-
-Acesse:
-
-```text
-http://localhost:8080
-```
-
-Pare o container:
-
-```bash
-docker stop pense-bem-test
+npm test       # executa os testes de dominio
+npm run lint   # verifica o codigo
+npx expo export --platform android  # valida o bundle mobile localmente
 ```
 
 ## Estrutura
 
 ```text
-src/
-  components/       Telas e componentes visuais
-  constants/        Constantes compartilhadas
-  data/             Perguntas usadas pela interface
-  domain/           Entidades e regras centrais do quiz
-  hooks/            Estado, áudio e fluxo do jogo
-  services/         Pontuação, livros e armazenamento
-  utils/            Funções utilitárias
-tests/              Testes automatizados
+app.json        Configuracao Expo
+index.js        Registro do app Expo
+src/App.jsx     Interface mobile React Native
+src/assets/     Imagens e audio do app
+src/constants/  Constantes compartilhadas
+src/data/       Perguntas usadas pela interface
+src/domain/     Entidades e regras centrais do quiz
+src/hooks/      Estado, audio e fluxo do jogo
+src/services/   Livros, pontuacao e armazenamento
+tests/          Testes automatizados
 ```

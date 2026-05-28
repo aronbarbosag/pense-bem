@@ -1,42 +1,30 @@
 {
   "name": "pense-bem",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
     "lint": "eslint .",
-    "test": "jest",
-    "preview": "vite preview",
-    "docker:build": "docker build --no-cache -t pense-bem:test .",
-    "docker:run": "docker run -d --rm --name pense-bem-test -p 8080:80 pense-bem:test",
-    "docker:check": "curl -I http://localhost:8080",
-    "docker:logs": "docker logs pense-bem-test --tail 20",
-    "docker:stop": "docker stop pense-bem-test"
+    "test": "jest"
   },
   "dependencies": {
-    "framer-motion": "^12.38.0",
-    "lucide-react": "^1.14.0",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "expo": "54.0.23",
+    "expo-av": "16.0.7",
+    "react": "19.1.0",
+    "react-native": "0.81.5"
   },
   "devDependencies": {
-
-    "jest": "^30.3.0",
-    "@types/jest": "^30.0.0",
-
     "@eslint/js": "^10.0.1",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "autoprefixer": "^10.5.0",
+    "@types/jest": "^30.0.0",
     "eslint": "^10.2.1",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
-    "postcss": "^8.5.13",
-    "tailwindcss": "^3.4.17",
-    "vite": "^8.0.10"
+    "jest": "^30.3.0"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Pense Bem Sonic",
+    "slug": "pense-bem-sonic",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": [
+      "src/assets/**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#070711"
+      }
+    }
+  }
+}

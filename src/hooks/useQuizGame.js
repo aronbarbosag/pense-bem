@@ -1,9 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
-import { ANSWER_KEY_MAP } from "../constants/answerLetters";
 import { BOOK_CODES, DEFAULT_BOOK_CODE } from "../constants/books";
 import { Quiz } from "../domain/entities/quiz";
 import { getBookQuestions } from "../services/bookService";
-import { readStoredScores, saveStoredScores } from "../services/scoreStorage";
+import { createEmptyScores, readStoredScores, saveStoredScores } from "../services/scoreStorage";
 import { useAudioEngine } from "./useAudioEngine";
 
 const createBookQuiz = (bookCode) => new Quiz(getBookQuestions(bookCode));
@@ -25,7 +24,7 @@ export function useQuizGame() {
   const [selectedAnswerOption, setSelectedAnswerOption] = useState(null);
   const [feedback, setFeedback] = useState(null);
   const [bookCode, setBookCode] = useState(DEFAULT_BOOK_CODE);
-  const [highestScoresByBookCode, setHighestScoresByBookCode] = useState(readStoredScores);
+  const [highestScoresByBookCode, setHighestScoresByBookCode] = useState(createEmptyScores);
   const [completedBookResult, setCompletedBookResult] = useState(null);
   const [secretBookClicks, setSecretBookClicks] = useState(() => new Set());
   const [isGlitchEffectActive, setIsGlitchEffectActive] = useState(false);
@@ -43,6 +42,20 @@ export function useQuizGame() {
 
   const toggleMusic = useCallback(() => {
     setMusic((currentMusic) => !currentMusic);
+  }, []);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    readStoredScores().then((storedScoresByBookCode) => {
+      if (isMounted) {
+        setHighestScoresByBookCode(storedScoresByBookCode);
+      }
+    });
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   useEffect(() => {
@@ -66,7 +79,7 @@ export function useQuizGame() {
         [finishedBookCode]: Math.max(currentHighestScoresByBookCode[finishedBookCode] ?? 0, finalScore),
       };
 
-      saveStoredScores(nextHighestScoresByBookCode);
+      saveStoredScores(nextHighestScoresByBookCode).catch(() => {});
       return nextHighestScoresByBookCode;
     });
   }, []);
@@ -140,21 +153,6 @@ export function useQuizGame() {
     setIsGlitchEffectActive(false);
     setIsQuestionTransitionActive(false);
   }, [bookCode]);
-
-  useEffect(() => {
-    const handleKey = (event) => {
-      if (!isPlaying || !currentQuestion) return;
-
-      const answerOptionIndex = ANSWER_KEY_MAP[event.key.toLowerCase()];
-
-      if (answerOptionIndex !== undefined && currentQuestion.options[answerOptionIndex]) {
-        answerQuestion(currentQuestion.options[answerOptionIndex]);
-      }
-    };
-
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [answerQuestion, currentQuestion, isPlaying]);
 
   return {
     answerQuestion,
