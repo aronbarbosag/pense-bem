@@ -25,20 +25,24 @@ export function HowToPlayScreen({ onBack }) {
 
         <div className="mt-5 space-y-4 text-sm leading-relaxed tracking-[.08em] text-slate-300">
           <p>Escolha um código de livro na tela inicial para começar direto na primeira questão daquele livro.</p>
-          <p>Leia a pergunta, escolha uma alternativa na lista ou use os atalhos A, B, C, D, E e F quando aparecerem.</p>
-          <p>Cada acerto aumenta sua pontuação. Cada erro tira uma vida, até o limite de 3 erros na rodada.</p>
-          <p>Quando a última questão do livro terminar, o jogo grava sua maior pontuação daquele livro no navegador.</p>
+          <p>Cada livro possui 30 questões.</p>
+          <p>O último livro 026 tem questões aleatórias dos livros anteriores</p>
+          <p>Leia a pergunta, caso tenha imagem analise a imagem e escolha uma alternativa na lista ou use os atalhos A, B, C, D, E e F quando aparecerem.</p>
+          <p>Cada acerto de primeira ganha 3 pontos, acerto após um erro ganha 2 pontos e na última tentativa ganha 1 ponto.</p>
+          <p>A pontuação máxima que pode ser obtida por livro é 90</p>
+
+          <p>Não há necessidade da utilização do livro oficial para conseguir responder as questões, porém você pode fazer o download dele abaixo</p>
         </div>
       </div>
 
       <a
-        href="https://example.com/livro-pense-bem-sonic"
+        href="https://www.bojoga.com.br/files/2016/10/pense_bem_aventura_cientifica_sonic.pdf"
         target="_blank"
         rel="noreferrer"
         className="mt-5 flex items-center justify-center gap-2 rounded-xl border border-amber-300/60 bg-amber-300/8 px-5 py-4 text-xs font-black uppercase tracking-[.2em] text-amber-300 transition hover:bg-amber-300/15"
       >
         <BookOpen size={16} />
-        Livro de apoio
+        Baixe aqui o livro de apoio
       </a>
     </motion.div>
   );

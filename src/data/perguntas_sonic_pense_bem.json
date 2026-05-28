@@ -253,7 +253,7 @@
   },
   {
     "id": 39,
-    "pergunta": "O CROC funciona como um grande ____.",
+    "pergunta": "O CROC é capaz de atrair o mal, então ele funciona como um grande ____.",
     "imagem": "questao_39.jpg",
     "opcoes": ["relógio", "nariz", "ímã", "ventilador"],
     "resposta": "ímã"
@@ -359,35 +359,35 @@
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 51?",
     "imagem": "questao_51_a_56.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
-    "resposta": "C"
+    "resposta": "A"
   },
   {
     "id": 52,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 52?",
     "imagem": "questao_51_a_56.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
-    "resposta": "F"
+    "resposta": "B"
   },
   {
     "id": 53,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 53?",
     "imagem": "questao_51_a_56.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
-    "resposta": "A"
+    "resposta": "C"
   },
   {
     "id": 54,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 54?",
     "imagem": "questao_51_a_56.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
-    "resposta": "E"
+    "resposta": "F"
   },
   {
     "id": 55,
     "pergunta": "No labirinto das Esmeraldas Caóticas, qual caminho/letra corresponde à pedra 55?",
     "imagem": "questao_51_a_56.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
-    "resposta": "B"
+    "resposta": "E"
   },
   {
     "id": 56,
@@ -399,43 +399,47 @@
   {
     "id": 57,
     "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: TOPÁZIO.",
+    "imagem": "questao_57_a_59.jpg",
     "opcoes": ["vermelho", "amarelo/laranja", "azul", "verde"],
     "resposta": "amarelo/laranja"
   },
   {
     "id": 58,
     "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: ÁGUA-MARINHA.",
+    "imagem": "questao_57_a_59.jpg",
     "opcoes": ["vermelho", "amarelo", "azul-claro", "verde"],
     "resposta": "azul-claro"
   },
   {
     "id": 59,
     "pergunta": "Pressione a tecla correspondente à cor da pedra preciosa: RUBI.",
+    "imagem": "questao_57_a_59.jpg",
     "opcoes": ["vermelho", "amarelo", "azul", "verde"],
     "resposta": "vermelho"
   },
   {
+
     "id": 60,
-    "pergunta": "A esmeralda de que o Dr. K. precisava tinha de ser da cor ____.",
+    "pergunta": "Os amigos de Sonic ajudaram o Dr. K a coletar seis Esmeraldas Caóticas de cores: verde, laranja, vermelha, azul, roxa e branca.Faltou a sétima esmeralda a mais importante que era diferente das outras pois era da cor...",
     "opcoes": ["cinza", "roxa", "verde", "vermelha"],
-    "resposta": "verde"
+    "resposta": "cinza"
   },
   {
     "id": 61,
-    "pergunta": "Na linha 61, assinale o desenho que lembra um som ou barulho.",
+    "pergunta": "Assinale a alternativa que lembra um som ou barulho.",
     "opcoes": ["meia", "pássaro cantando", "árvore", "peixe"],
     "resposta": "pássaro cantando"
   },
   {
     "id": 62,
-    "pergunta": "Na linha 62, assinale o desenho que lembra um som ou barulho.",
-    "opcoes": ["despertador", "lápis", "chaleira", "livro"],
+    "pergunta": "Assinale a alternativa que lembra um som ou barulho.",
+    "opcoes": ["despertador", "lápis", "relógio", "livro"],
     "resposta": "despertador"
   },
   {
     "id": 63,
-    "pergunta": "Na linha 63, assinale o desenho que lembra um som ou barulho.",
-    "opcoes": ["tênis", "selo", "mão", "trompete"],
+    "pergunta": "Assinale a alternativa que lembra um som ou barulho.",
+    "opcoes": ["tênis", "selo", "luva", "trompete"],
     "resposta": "trompete"
   },
   {
@@ -513,31 +517,31 @@
   {
     "id": 76,
     "pergunta": "Qual deles voa mais alto?",
-    "opcoes": ["ave", "balão", "borboleta", "avião"],
-    "resposta": "avião"
+    "opcoes": ["ave", "foguete", "borboleta", "avião"],
+    "resposta": "foguete"
   },
   {
     "id": 77,
     "pergunta": "Qual é o mais leve?",
-    "opcoes": ["avião", "livro", "chave", "meia"],
-    "resposta": "meia"
+    "opcoes": ["pena", "livro", "chave", "meia"],
+    "resposta": "pena"
   },
   {
     "id": 78,
     "pergunta": "Qual é o mais pesado?",
-    "opcoes": ["onça", "folha", "cachorro", "elefante"],
+    "opcoes": ["gato", "folha", "cachorro", "elefante"],
     "resposta": "elefante"
   },
   {
     "id": 79,
     "pergunta": "Qual é o mais quente?",
-    "opcoes": ["luvas", "sol", "picolé", "mesa"],
+    "opcoes": ["casaco", "sol", "picolé", "mesa"],
     "resposta": "sol"
   },
   {
     "id": 80,
     "pergunta": "Qual é o mais frio?",
-    "opcoes": ["gelo", "figo", "ferro de passar", "tapete"],
+    "opcoes": ["gelo", "figo", "ferro de passar", "bolo"],
     "resposta": "gelo"
   },
   {
@@ -595,14 +599,14 @@
     "pergunta": "O 3º quadrinho é:",
     "imagem": "questao_87_a_90.jpg",
     "opcoes": ["C", "A", "D", "B"],
-    "resposta": "A"
+    "resposta": "C"
   },
   {
     "id": 90,
     "pergunta": "O 4º quadrinho é:",
     "imagem": "questao_87_a_90.jpg",
     "opcoes": ["B", "C", "D", "A"],
-    "resposta": "C"
+    "resposta": "A"
   },
   {
     "id": 91,
@@ -651,28 +655,28 @@
     "pergunta": "Na história da explosão, o primeiro quadrinho é:",
     "imagem": "questao_98_a_103.jpg",
     "opcoes": ["E", "C", "B", "A"],
-    "resposta": "A"
+    "resposta": "B"
   },
   {
     "id": 99,
     "pergunta": "Na história da explosão, o segundo quadrinho é:",
     "imagem": "questao_98_a_103.jpg",
     "opcoes": ["A", "B", "C", "D"],
-    "resposta": "C"
+    "resposta": "D"
   },
   {
     "id": 100,
     "pergunta": "Na história da explosão, o terceiro quadrinho é:",
     "imagem": "questao_98_a_103.jpg",
     "opcoes": ["B", "A", "C", "F"],
-    "resposta": "B"
+    "resposta": "A"
   },
   {
     "id": 101,
     "pergunta": "Na história da explosão, o quarto quadrinho é:",
     "imagem": "questao_98_a_103.jpg",
     "opcoes": ["E", "D", "A", "C"],
-    "resposta": "D"
+    "resposta": "C"
   },
   {
     "id": 102,
@@ -685,7 +689,7 @@
     "id": 103,
     "pergunta": "Na história da explosão, o sexto quadrinho é:",
     "imagem": "questao_98_a_103.jpg",
-    "opcoes": ["A", "D", "C", "B", "F"],
+    "opcoes": ["A", "D", "C", "F"],
     "resposta": "F"
   },
   {
@@ -732,9 +736,9 @@
   },
   {
     "id": 111,
-    "pergunta": "Encontre a palavra que significa o contrário da palavra assinalada na história.",
+    "pergunta": "Contrário de 'engordou'.",
     "opcoes": ["abaixou", "comeu", "esvaziou", "emagreceu"],
-    "resposta": "comeu"
+    "resposta": "emagreceu"
   },
   {
     "id": 112,
@@ -799,13 +803,13 @@
   {
     "id": 122,
     "pergunta": "Não tenho gosto, não tenho cor. Você gosta de mim quando faz calor.",
-    "opcoes": ["sabonete", "banana", "gelo", "carrinho"],
+    "opcoes": ["sabonete", "concha", "gelo", "carrinho"],
     "resposta": "gelo"
   },
   {
     "id": 123,
     "pergunta": "Tenho asa mas não sei voar. Tenho bico e não posso bicar.",
-    "opcoes": ["ventilador", "pássaro", "sapo", "chaleira"],
+    "opcoes": ["ventilador", "pássaro", "avião", "chaleira"],
     "resposta": "chaleira"
   },
   {
@@ -823,48 +827,48 @@
   {
     "id": 126,
     "pergunta": "Tenho barba e não sou homem. Tenho dente e não sou gente.",
-    "opcoes": ["alho", "tubarão", "cachorro", "queijo"],
+    "opcoes": ["alho", "tubarão", "cachorro", "cobra"],
     "resposta": "alho"
   },
   {
     "id": 127,
-    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de BUZZ BOMBER.",
-    "opcoes": ["balão", "martelo", "carro", "banana", "parafuso"],
+    "pergunta": "Qual alternativa começa com a mesma letra de BUZZ BOMBER.",
+    "opcoes": ["martelo", "carro", "banana", "parafuso"],
     "resposta": "banana"
   },
   {
     "id": 128,
-    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de JAWS.",
-    "opcoes": ["jarra", "relógio", "calça", "jacaré"],
+    "pergunta": "Qual alternativa começa com a mesma letra de JAWS.",
+    "opcoes": ["chaleira", "relógio", "calça", "jacaré"],
     "resposta": "jacaré"
   },
   {
     "id": 129,
-    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de MOTO BUG.",
-    "opcoes": ["maçã", "caracol", "cobra", "folha", "escova"],
-    "resposta": "maçã"
+    "pergunta": "Qual alternativa começa com a mesma letra de MOTO BUG.",
+    "opcoes": ["caracol", "minhoca", "folha", "escova"],
+    "resposta": "minhoca"
   },
   {
     "id": 130,
-    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de CATERKILLER.",
-    "opcoes": ["cravo/flor", "cavalo", "porta", "xícara"],
+    "pergunta": "Qual alternativa começa com a mesma letra de CATERKILLER.",
+    "opcoes": ["peteca", "cavalo", "porta", "xícara"],
     "resposta": "cavalo"
   },
   {
     "id": 131,
-    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de ROLLER.",
-    "opcoes": ["árvore", "pera", "bateria", "régua"],
+    "pergunta": "Qual alternativa começa com a mesma letra de ROLLER.",
+    "opcoes": ["árvore", "pera", "lápis", "régua"],
     "resposta": "régua"
   },
   {
     "id": 132,
-    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de SPIKES.",
+    "pergunta": "Qual alternativa começa com a mesma letra de SPIKES.",
     "opcoes": ["olho", "garfo", "bola", "sapato"],
     "resposta": "sapato"
   },
   {
     "id": 133,
-    "pergunta": "Encontre a figura cujo nome começa com a mesma letra de NEWTRON.",
+    "pergunta": "Qual alternativa começa com a mesma letra de NEWTRON.",
     "opcoes": ["vela", "nuvem", "morango", "cadeira"],
     "resposta": "nuvem"
   },
@@ -912,62 +916,72 @@
   },
   {
     "id": 141,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 141.",
-    "opcoes": ["A", "B", "C", "D", "E", "F"],
-    "resposta": "A"
-  },
-  {
-    "id": 142,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 142.",
-    "opcoes": ["A", "B", "C", "D", "E", "F"],
-    "resposta": "B"
-  },
-  {
-    "id": 143,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 143.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 141.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "D"
   },
   {
-    "id": 144,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 144.",
+    "id": 142,
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 142.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "C"
   },
   {
+    "id": 143,
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 143.",
+    "imagem": "questao_141_a_146.jpg",
+    "opcoes": ["A", "B", "C", "D", "E", "F"],
+    "resposta": "E"
+  },
+  {
+    "id": 144,
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 144.",
+    "imagem": "questao_141_a_146.jpg",
+    "opcoes": ["A", "B", "C", "D", "E", "F"],
+    "resposta": "A"
+  },
+  {
     "id": 145,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 145.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 145.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
     "resposta": "F"
   },
   {
     "id": 146,
-    "pergunta": "Complete o quebra-cabeça 'Quem vencerá?' com a peça correspondente ao lugar 146.",
+    "pergunta": "Complete o quebra-cabeça: Qual a peça correspondente ao lugar 146.",
+    "imagem": "questao_141_a_146.jpg",
     "opcoes": ["A", "B", "C", "D", "E", "F"],
-    "resposta": "E"
+    "resposta": "B"
   },
   {
     "id": 147,
     "pergunta": "Ajude Sonic: sequência correta para montar Sally Acorn.",
+    "imagem": "questao_147_a_150.jpg",
     "opcoes": ["1, 6, 10, 14", "1, 7, 11, 15", "1, 14, 11, 8", "1, 4, 8, 12"],
-    "resposta": "1, 4, 8, 12"
+    "resposta": "1, 14, 11, 8"
   },
   {
     "id": 148,
     "pergunta": "Ajude Sonic: sequência correta para montar Chirps.",
+    "imagem": "questao_147_a_150.jpg",
     "opcoes": ["5, 2, 11, 15", "5, 4, 9, 16", "5, 1, 8, 13", "5, 10, 3, 16"],
-    "resposta": "5, 1, 8, 13"
+    "resposta": "5, 10, 3, 16"
   },
   {
     "id": 149,
     "pergunta": "Ajude Sonic: sequência correta para montar Tux.",
+    "imagem": "questao_147_a_150.jpg",
     "opcoes": ["9, 2, 5, 16", "9, 3, 7, 15", "9, 6, 15, 4", "9, 1, 7, 14"],
-    "resposta": "9, 3, 7, 15"
+    "resposta": "9, 6, 15, 4"
   },
   {
     "id": 150,
     "pergunta": "Ajude Sonic: sequência correta para montar Joe Sushi.",
+    "imagem": "questao_147_a_150.jpg",
     "opcoes": ["13, 1, 8, 11", "13, 2, 7, 12", "13, 4, 6, 14", "13, 3, 8, 15"],
-    "resposta": "13, 4, 6, 14"
+    "resposta": "13, 2, 7, 12"
   }
 ]

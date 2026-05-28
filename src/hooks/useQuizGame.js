@@ -22,19 +22,19 @@ export function useQuizGame() {
   const [music, setMusic] = useState(false);
   const [quiz, setQuiz] = useState(() => createBookQuiz(DEFAULT_BOOK_CODE));
   const [, refreshGame] = useState(0);
-  const [selected, setSelected] = useState(null);
+  const [selectedAnswerOption, setSelectedAnswerOption] = useState(null);
   const [feedback, setFeedback] = useState(null);
   const [bookCode, setBookCode] = useState(DEFAULT_BOOK_CODE);
-  const [records, setRecords] = useState(readStoredScores);
-  const [completion, setCompletion] = useState(null);
+  const [highestScoresByBookCode, setHighestScoresByBookCode] = useState(readStoredScores);
+  const [completedBookResult, setCompletedBookResult] = useState(null);
   const [secretBookClicks, setSecretBookClicks] = useState(() => new Set());
-  const [glitch, setGlitch] = useState(false);
-  const [dash, setDash] = useState(false);
+  const [isGlitchEffectActive, setIsGlitchEffectActive] = useState(false);
+  const [isQuestionTransitionActive, setIsQuestionTransitionActive] = useState(false);
 
   const questionIndex = quiz.currentQuestionIndex;
   const currentQuestion = quiz.getCurrentQuestion();
   const score =
-    feedback === "correct" ? quiz.points.getPoint() + getAnswerPoints(quiz.mistakes) : quiz.points.getPoint();
+    feedback === "correct" ? quiz.points.getTotal() + getAnswerPoints(quiz.mistakes) : quiz.points.getTotal();
   const errors = feedback === "wrong" ? Math.min(3, quiz.mistakes + 1) : quiz.mistakes;
   const isPlaying = view === "game";
   const isSecretMascotUnlocked = secretBookClicks.size === BOOK_CODES.length;
@@ -46,45 +46,50 @@ export function useQuizGame() {
   }, []);
 
   useEffect(() => {
-    if (music) {
+    if (view === "complete") {
+      startMusic("completion");
+      return;
+    }
+
+    if (music && view !== "game") {
       startMusic(musicMode);
       return;
     }
 
     stopMusic();
-  }, [music, musicMode, startMusic, stopMusic]);
+  }, [music, musicMode, startMusic, stopMusic, view]);
 
   const updateRecord = useCallback((finishedBookCode, finalScore) => {
-    setRecords((currentRecords) => {
-      const nextRecords = {
-        ...currentRecords,
-        [finishedBookCode]: Math.max(currentRecords[finishedBookCode] ?? 0, finalScore),
+    setHighestScoresByBookCode((currentHighestScoresByBookCode) => {
+      const nextHighestScoresByBookCode = {
+        ...currentHighestScoresByBookCode,
+        [finishedBookCode]: Math.max(currentHighestScoresByBookCode[finishedBookCode] ?? 0, finalScore),
       };
 
-      saveStoredScores(nextRecords);
-      return nextRecords;
+      saveStoredScores(nextHighestScoresByBookCode);
+      return nextHighestScoresByBookCode;
     });
   }, []);
 
   const showNextQuestion = useCallback((answer) => {
-    setDash(true);
+    setIsQuestionTransitionActive(true);
 
     setTimeout(() => {
       quiz.answerCurrentQuestion(answer);
-      const finalScore = quiz.points.getPoint();
+      const finalScore = quiz.points.getTotal();
 
       if (quiz.isQuizFinished()) {
         updateRecord(bookCode, finalScore);
-        setCompletion({ bookCode, score: finalScore });
+        setCompletedBookResult({ bookCode, score: finalScore });
         setView("complete");
         setQuiz(createBookQuiz(bookCode));
       } else {
         refreshGame((currentValue) => currentValue + 1);
       }
 
-      setSelected(null);
+      setSelectedAnswerOption(null);
       setFeedback(null);
-      setDash(false);
+      setIsQuestionTransitionActive(false);
     }, 420);
   }, [bookCode, quiz, updateRecord]);
 
@@ -98,52 +103,52 @@ export function useQuizGame() {
     });
     setBookCode(nextBookCode);
     setQuiz(createBookQuiz(nextBookCode));
-    setSelected(null);
+    setSelectedAnswerOption(null);
     setFeedback(null);
-    setGlitch(false);
-    setDash(false);
+    setIsGlitchEffectActive(false);
+    setIsQuestionTransitionActive(false);
     setView("game");
-    setCompletion(null);
+    setCompletedBookResult(null);
     beep("correct");
   }, [beep, stopMusic]);
 
-  const answerQuestion = useCallback((option) => {
+  const answerQuestion = useCallback((selectedOption) => {
     if (feedback || !currentQuestion) return;
 
-    const correct = currentQuestion.isRightAnswer(option);
+    const isCorrectAnswer = currentQuestion.isRightAnswer(selectedOption);
 
-    setSelected(option);
-    setFeedback(correct ? "correct" : "wrong");
-    beep(correct ? "correct" : "wrong");
+    setSelectedAnswerOption(selectedOption);
+    setFeedback(isCorrectAnswer ? "correct" : "wrong");
+    beep(isCorrectAnswer ? "correct" : "wrong");
 
-    if (correct) {
-      setGlitch(false);
+    if (isCorrectAnswer) {
+      setIsGlitchEffectActive(false);
     } else {
-      setGlitch(true);
-      setTimeout(() => setGlitch(false), 500);
+      setIsGlitchEffectActive(true);
+      setTimeout(() => setIsGlitchEffectActive(false), 500);
     }
 
-    setTimeout(() => showNextQuestion(option), 900);
+    setTimeout(() => showNextQuestion(selectedOption), 900);
   }, [beep, currentQuestion, feedback, showNextQuestion]);
 
   const resetToMenu = useCallback(() => {
     setView("menu");
     setQuiz(createBookQuiz(bookCode));
-    setSelected(null);
+    setSelectedAnswerOption(null);
     setFeedback(null);
-    setCompletion(null);
-    setGlitch(false);
-    setDash(false);
+    setCompletedBookResult(null);
+    setIsGlitchEffectActive(false);
+    setIsQuestionTransitionActive(false);
   }, [bookCode]);
 
   useEffect(() => {
     const handleKey = (event) => {
       if (!isPlaying || !currentQuestion) return;
 
-      const optionIndex = ANSWER_KEY_MAP[event.key.toLowerCase()];
+      const answerOptionIndex = ANSWER_KEY_MAP[event.key.toLowerCase()];
 
-      if (optionIndex !== undefined && currentQuestion.options[optionIndex]) {
-        answerQuestion(currentQuestion.options[optionIndex]);
+      if (answerOptionIndex !== undefined && currentQuestion.options[answerOptionIndex]) {
+        answerQuestion(currentQuestion.options[answerOptionIndex]);
       }
     };
 
@@ -154,21 +159,21 @@ export function useQuizGame() {
   return {
     answerQuestion,
     bookCode,
-    completion,
+    completedBookResult,
     currentQuestion,
-    dash,
     errors,
     feedback,
-    glitch,
+    highestScoresByBookCode,
+    isGlitchEffectActive,
     isPlaying,
+    isQuestionTransitionActive,
     isSecretMascotUnlocked,
     music,
     questionIndex,
     totalQuestions: quiz.questions.length,
-    records,
     resetToMenu,
     score,
-    selected,
+    selectedAnswerOption,
     setView,
     startBook,
     toggleMusic,

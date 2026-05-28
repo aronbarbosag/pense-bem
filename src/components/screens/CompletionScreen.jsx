@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, Trophy } from "lucide-react";
+import sonicDancing from "../../assets/sonic_dancing.gif";
 
-export function CompletionScreen({ completion, onBackToMenu, onOpenScores }) {
+export function CompletionScreen({ completedBookResult, onBackToMenu, onOpenScores }) {
   return (
     <motion.div
       key="complete"
@@ -10,6 +11,21 @@ export function CompletionScreen({ completion, onBackToMenu, onOpenScores }) {
       exit={{ opacity: 0, y: -18 }}
       className="text-center"
     >
+      <div className="relative mx-auto flex w-full items-center justify-center">
+        <div className="relative flex max-h-[220px] items-center justify-center">
+          <div className="absolute inset-x-10 inset-y-8 rounded-full bg-cyan-300/20 blur-2xl" />
+          <div className="absolute inset-x-14 inset-y-12 rounded-full bg-amber-300/20 blur-xl" />
+
+          <img
+            src={sonicDancing}
+            alt="Sonic dançando"
+            className="relative z-10 mx-auto max-h-[200px] w-auto select-none object-contain"
+            draggable="false"
+            style={{ clipPath: "inset(4px)" }}
+          />
+        </div>
+      </div>
+
       <div className="mx-auto grid h-20 w-20 place-items-center rounded-full border-2 border-amber-300 bg-amber-300/10 text-amber-300 shadow-[0_0_24px_rgba(255,184,0,.28)]">
         <Trophy size={34} />
       </div>
@@ -19,11 +35,11 @@ export function CompletionScreen({ completion, onBackToMenu, onOpenScores }) {
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed tracking-[.12em] text-slate-300">
-        Você terminou o livro {completion?.bookCode}. Sua pontuação nessa rodada foi:
+        Você terminou o livro {completedBookResult?.bookCode}. Sua pontuação nessa rodada foi:
       </p>
 
       <div className="mt-5 text-5xl font-black text-amber-300 drop-shadow-[0_0_14px_rgba(255,184,0,.45)]">
-        {String(completion?.score ?? 0).padStart(3, "0")}
+        {String(completedBookResult?.score ?? 0).padStart(3, "0")}
       </div>
 
       <button

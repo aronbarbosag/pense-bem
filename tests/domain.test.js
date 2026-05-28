@@ -16,13 +16,13 @@ describe('Deve retonar a resposta correta', () => {
 
   it('Deve registrar os pontos corretamente', () => {
     const points = new Points();
-    expect(points.getPoint()).toBe(0);
-    points.addPoint();
-    expect(points.getPoint()).toBe(1);
-    points.addPoint();
-    expect(points.getPoint()).toBe(2);
+    expect(points.getTotal()).toBe(0);
+    points.addPoints();
+    expect(points.getTotal()).toBe(1);
+    points.addPoints();
+    expect(points.getTotal()).toBe(2);
     points.resetPoints();
-    expect(points.getPoint()).toBe(0);
+    expect(points.getTotal()).toBe(0);
   });
 
   it('Deve validar o funcionamento do quiz', () => {
@@ -35,36 +35,36 @@ describe('Deve retonar a resposta correta', () => {
     expect(quiz.getCurrentQuestion()).toBe(question1);
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Paris');
-    expect(quiz.points.getPoint()).toBe(3);
+    expect(quiz.points.getTotal()).toBe(3);
     expect(quiz.mistakes).toBe(0);
     expect(quiz.getCurrentQuestion()).toBe(question2);
     // ERRANDO A RESPOSTA PARA TESTAR O CONTADOR DE ERROS, CONTINUA NA MESMA PERGUNTA CASO NAO ERRE 3X +
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(3);
+    expect(quiz.points.getTotal()).toBe(3);
     expect(quiz.mistakes).toBe(1);
     expect(quiz.getCurrentQuestion()).toBe(question2);
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS (MESMA QUESTAO)
     quiz.answerCurrentQuestion('Berlim');
-    expect(quiz.points.getPoint()).toBe(5);
+    expect(quiz.points.getTotal()).toBe(5);
     expect(quiz.mistakes).toBe(0);
     expect(quiz.getCurrentQuestion()).toBe(question3);
     // NOVA QUESTAO (3)
     // ERRANDO A RESPOSTA PARA TESTAR O CONTADOR DE ERROS
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(5);
+    expect(quiz.points.getTotal()).toBe(5);
     expect(quiz.mistakes).toBe(1);
     expect(quiz.getCurrentQuestion()).toBe(question3);
     //  MESMA QUESTAO (3) 2X ERROS
     // ERRANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(5);
+    expect(quiz.points.getTotal()).toBe(5);
     expect(quiz.mistakes).toBe(2);
     expect(quiz.getCurrentQuestion()).toBe(question3);
 
     // MESMA QUESTAO (3) 3X ERROS, DEVE AVANÇAR PARA A PRÓXIMA QUESTÃO
     // ERRANDO A RESPOSTA PARA TESTAR O CONTADOR DE ERROS
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(5);
+    expect(quiz.points.getTotal()).toBe(5);
     expect(quiz.mistakes).toBe(0);
     expect(quiz.getCurrentQuestion()).toBe(question4);
   })
@@ -108,52 +108,52 @@ describe('Deve retonar a resposta correta', () => {
     const quiz = new Quiz([question1, question2, question3, question4, question5, question6, question7, question8, question9, question10]);
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Paris');
-    expect(quiz.points.getPoint()).toBe(3);
+    expect(quiz.points.getTotal()).toBe(3);
     // ERRANDO A RESPOSTA PARA TESTAR O CONTADOR DE ERROS
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(3);
+    expect(quiz.points.getTotal()).toBe(3);
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS (MESMA QUESTAO)
     quiz.answerCurrentQuestion('Berlim');
-    expect(quiz.points.getPoint()).toBe(5);
+    expect(quiz.points.getTotal()).toBe(5);
     // NOVA QUESTAO (3)
     // ERRANDO A RESPOSTA PARA TESTAR O CONTADOR DE ERROS
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(5);
+    expect(quiz.points.getTotal()).toBe(5);
     //  MESMA QUESTAO (3) 2X ERROS
     // ERRANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(5);
+    expect(quiz.points.getTotal()).toBe(5);
     // MESMA QUESTAO (3) 3X ERROS, DEVE AVANÇAR PARA A PRÓXIMA QUESTÃO
     // ERRANDO A RESPOSTA PARA TESTAR O CONTADOR DE ERROS
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(5);
+    expect(quiz.points.getTotal()).toBe(5);
     // NOVA QUESTAO (4)
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Madrid');
-    expect(quiz.points.getPoint()).toBe(8);
+    expect(quiz.points.getTotal()).toBe(8);
     // NOVA QUESTAO (5)
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Londres');
-    expect(quiz.points.getPoint()).toBe(11);
+    expect(quiz.points.getTotal()).toBe(11);
     // NOVA QUESTAO (6)
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Moscou');
-    expect(quiz.points.getPoint()).toBe(14);
+    expect(quiz.points.getTotal()).toBe(14);
     // NOVA QUESTAO (7)
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Tóquio');
-    expect(quiz.points.getPoint()).toBe(17);
+    expect(quiz.points.getTotal()).toBe(17);
     // NOVA QUESTAO (8)
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Pequim');
-    expect(quiz.points.getPoint()).toBe(20);
+    expect(quiz.points.getTotal()).toBe(20);
     // NOVA QUESTAO (9)
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Nova Délhi');
-    expect(quiz.points.getPoint()).toBe(23);
+    expect(quiz.points.getTotal()).toBe(23);
     // NOVA QUESTAO (10)
     // ACERTANDO A RESPOSTA PARA TESTAR O CONTADOR DE PONTOS
     quiz.answerCurrentQuestion('Brasília');
-    expect(quiz.points.getPoint()).toBe(26);
+    expect(quiz.points.getTotal()).toBe(26);
   });
 });

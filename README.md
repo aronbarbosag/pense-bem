@@ -1,10 +1,78 @@
-# Pense Bem
+# Pense Bem Sonic
 
-Aplicação web inspirada no clássico **Pense Bem**, com perguntas do universo Sonic, interface interativa, pontuação por desempenho e organização da regra de jogo em uma camada de domínio.
+Uma releitura web do clássico **Pense Bem**, com perguntas inspiradas no universo Sonic e em desafios de raciocínio. O jogo roda direto no navegador, sem precisar do aparelho original ou do livro de consulta.
 
-O objetivo é ser uma releitura do Pense Bem para os tempos atuais: uma experiência digital que preserva a proposta de perguntas e respostas, mas permite jogar sem precisar ter o livro físico em mãos.
+![Tela inicial do Pense Bem Sonic](./src/assets/app_tela_inicial.png)
 
-O projeto usa React no frontend e mantém a lógica principal do quiz em entidades de domínio, facilitando testes e evolução das regras sem acoplar tudo à interface.
+## Destaques
+
+- Quiz dividido por códigos de livros.
+- 30 perguntas por livro, com pontuação por tentativa.
+- Livro especial `026` com perguntas aleatórias dos livros anteriores.
+- Imagens de apoio em algumas questões.
+- Pontuações salvas localmente no navegador.
+- Música, efeitos sonoros e animações temáticas.
+- Easter Egg com personagem secreto ao interagir com todos os códigos de livro.
+- Interface responsiva construída com React, Vite e Tailwind CSS.
+
+## Telas
+
+<p align="center">
+  <img width="420" alt="Tela inicial com seleção de livros" src="./src/assets/app_tela_inicial.png" />
+  <br />
+  <em>Tela inicial com seleção dos livros.</em>
+</p>
+
+<p align="center">
+  <img width="420" alt="Tela de como jogar" src="./src/assets/app_tela_como_jogar.png" />
+  <br />
+  <em>Instruções resumidas de como jogar.</em>
+</p>
+
+<p align="center">
+  <img width="420" alt="Questão com imagem de apoio" src="./src/assets/app_questao_com_imagem.png" />
+  <br />
+  <em>Questões com alternativas e imagens de apoio.</em>
+</p>
+
+<p align="center">
+  <img width="420" alt="Tela de livro finalizado" src="./src/assets/app_tela_livro_finalizado.png" />
+  <br />
+  <em>Resultado ao finalizar um livro.</em>
+</p>
+
+<p align="center">
+  <img width="420" alt="Tela de pontuações" src="./src/assets/app_tela_pontuacoes.png" />
+  <br />
+  <em>Histórico de melhores pontuações.</em>
+</p>
+
+## Personagens
+
+<p align="center">
+  <img height="140" alt="Sonic" src="./src/assets/sonic.gif" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="140" alt="Sonic dançando" src="./src/assets/sonic_dancing.gif" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="140" alt="Shadow" src="./src/assets/shadow.gif" />
+</p>
+
+## Regras do Quiz
+
+- Cada pergunta permite até 3 tentativas.
+- Acerto na 1ª tentativa vale 3 pontos.
+- Acerto na 2ª tentativa vale 2 pontos.
+- Acerto na 3ª tentativa vale 1 ponto.
+- Após 3 erros, o jogo avança sem pontuar.
+- A pontuação máxima por livro é 90 pontos.
+
+## Easter Egg
+
+Clique pelo menos uma vez em cada código de livro na tela inicial. Ao completar todos, um personagem secreto é desbloqueado na interface.
+
+## Arquitetura
+
+A lógica principal do quiz fica centralizada na camada de domínio, em `src/domain`. Essa separação mantém as regras do jogo independentes da interface, facilita testes automatizados e deixa a evolução do projeto mais simples.
 
 ## Tecnologias
 
@@ -17,26 +85,7 @@ O projeto usa React no frontend e mantém a lógica principal do quiz em entidad
 - Docker
 - Nginx
 
-## Estrutura
-
-```text
-src/
-  components/       Componentes visuais e telas da aplicação
-  constants/        Constantes compartilhadas
-  data/             Perguntas normalizadas para uso na interface
-  domain/           Entidades e regras principais do quiz
-  hooks/            Hooks de estado, áudio e fluxo do jogo
-  services/         Serviços de pontuação, livros e armazenamento
-  utils/            Funções utilitárias
-tests/              Testes automatizados do domínio
-```
-
-## Rodando Localmente
-
-Pré-requisitos:
-
-- Node.js
-- npm
+## Como Rodar
 
 Instale as dependências:
 
@@ -44,45 +93,28 @@ Instale as dependências:
 npm install
 ```
 
-Inicie o servidor de desenvolvimento:
+Inicie o ambiente de desenvolvimento:
 
 ```bash
 npm run dev
 ```
 
-Acesse a aplicação em:
+Acesse:
 
 ```text
 http://localhost:5173
 ```
 
-## Qualidade
-
-Execute os testes:
+## Scripts Úteis
 
 ```bash
-npm test
+npm run lint      # verifica padrões de código
+npm test          # executa os testes
+npm run build     # gera a build de produção
+npm run preview   # pré-visualiza a build
 ```
 
-Gere uma build de produção:
-
-```bash
-npm run build
-```
-
-Pré-visualize a build localmente:
-
-```bash
-npm run preview
-```
-
-Execute o lint:
-
-```bash
-npm run lint
-```
-
-## Utilizando Docker
+## Docker
 
 Crie a imagem:
 
@@ -96,16 +128,10 @@ Suba o container:
 docker run -d --rm --name pense-bem-test -p 8080:80 pense-bem:test
 ```
 
-Liste o container em execução:
+Acesse:
 
-```bash
-docker ps --filter name=pense-bem-test
-```
-
-Veja os logs:
-
-```bash
-docker logs pense-bem-test --tail 20
+```text
+http://localhost:8080
 ```
 
 Pare o container:
@@ -114,16 +140,16 @@ Pare o container:
 docker stop pense-bem-test
 ```
 
-## Regras do Quiz
+## Estrutura
 
-- Cada livro possui um conjunto de perguntas.
-- A pontuação varia conforme a quantidade de tentativas na pergunta.
-- Após três erros, o jogo avança para a próxima pergunta.
-- O melhor resultado de cada livro é salvo no navegador.
-
-## Build de Produção
-
-O Dockerfile usa build em múltiplos estágios:
-
-- `node:24.13-alpine` para instalar dependências e gerar os arquivos estáticos.
-- `nginx:1.29-alpine` para servir o conteúdo final da pasta `dist`.
+```text
+src/
+  components/       Telas e componentes visuais
+  constants/        Constantes compartilhadas
+  data/             Perguntas usadas pela interface
+  domain/           Entidades e regras centrais do quiz
+  hooks/            Estado, áudio e fluxo do jogo
+  services/         Pontuação, livros e armazenamento
+  utils/            Funções utilitárias
+tests/              Testes automatizados
+```
